@@ -1,5 +1,7 @@
 # Standards
 
+English | [中文](README.zh.md)
+
 Company-wide standards. Many standards live inside the department that owns them; this is the index of
 where each standard is authored.
 

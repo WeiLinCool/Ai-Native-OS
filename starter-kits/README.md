@@ -1,5 +1,7 @@
 # Starter Kits
 
+English | [中文](README.zh.md)
+
 A starter kit is a **preconfigured company type** that inherits the AI-Native OS core and adds
 domain-specific practice. Clone the repo, pick a starter kit, and you have an operating system tuned to
 your kind of company.

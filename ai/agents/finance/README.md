@@ -1,5 +1,7 @@
 # Finance Agents
 
+English | [中文](README.zh.md)
+
 The AI agents for the [finance department](../../../handbook/departments/finance/README.md). Each follows the
 [standard 11-section agent spec](../agent-template.md); the full registry is in
 [ai/agents/README.md](../README.md).

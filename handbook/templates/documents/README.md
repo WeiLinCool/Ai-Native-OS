@@ -1,5 +1,7 @@
 # Document Templates
 
+English | [中文](README.zh.md)
+
 Company-wide, fill-in-the-blank documents. Copy the one you need into your working folder.
 
 | Template | Use when |

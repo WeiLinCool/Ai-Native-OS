@@ -1,5 +1,7 @@
 # Starter Kit: Enterprise B2B
 
+English | [中文](README.zh.md)
+
 A company selling to large organizations with procurement, security review, and compliance needs.
 
 ## What it inherits (unchanged)

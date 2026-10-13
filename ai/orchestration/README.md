@@ -1,5 +1,7 @@
 # Orchestration — The Kernel
 
+English | [中文](README.zh.md)
+
 Orchestration is how AI-Native OS turns a request into coordinated, reviewed, approved, and executed
 work across a workforce of specialized [agents](../agents/README.md). No agent works alone on major
 decisions; the kernel is what makes many narrow experts behave like one reliable organization.

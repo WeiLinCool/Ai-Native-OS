@@ -1,5 +1,7 @@
 # Hardware
 
+English | [中文](README.zh.md)
+
 Hardware designs, builds, and validates physical products - firmware, electronics, and mechanical systems - for companies whose product includes atoms, not just bits (robotics, drones, embedded, IoT, devices). Activated only for hardware-inclusive companies; software-only companies leave it dormant. It reports to the [CTO](../../company/roles.md).
 
 ## Index

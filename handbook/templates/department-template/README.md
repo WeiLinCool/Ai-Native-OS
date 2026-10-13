@@ -1,5 +1,7 @@
 # Department Template
 
+English | [中文](README.zh.md)
+
 > Copy this entire folder to `<department>/` and fill in every file. This is the canonical shape for
 > every department in AI-Native OS — see [STRUCTURE.md](../../../STRUCTURE.md#standard-department-structure).
 > Delete these blockquote instructions as you complete each file. **Never leave placeholder text.**

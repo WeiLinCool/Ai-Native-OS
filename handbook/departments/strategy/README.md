@@ -1,5 +1,7 @@
 # Strategy
 
+English | [中文](README.zh.md)
+
 Strategy builds the company around the product. It owns the startup lifecycle, market and competitive analysis, the business model, pricing, unit economics, fundraising, and go-to-market. It turns validated opportunities from [research](../research/README.md) into a durable business, and reports to the [CEO](../../company/roles.md), [CFO](../../company/roles.md), and [CMO](../../company/roles.md).
 
 ## Index

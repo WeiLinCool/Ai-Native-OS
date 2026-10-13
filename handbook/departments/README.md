@@ -1,5 +1,7 @@
 # Departments
 
+English | [中文](README.zh.md)
+
 Twenty self-contained operating manuals. Every department follows the **same shape** (the standard 18
 files + `templates/` `checklists/` `examples/`), so once you know one, you know them all — see
 [STRUCTURE.md](../../STRUCTURE.md#standard-department-structure).

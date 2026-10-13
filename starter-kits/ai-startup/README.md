@@ -1,5 +1,7 @@
 # Starter Kit: AI Startup
 
+English | [中文](README.zh.md)
+
 A company whose core product is an AI system (LLM app, agent product, ML service). This kit inherits
 the AI-Native OS core and adds what an AI-native product company specifically needs.
 

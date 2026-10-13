@@ -1,5 +1,7 @@
 # Company
 
+English | [中文](README.zh.md)
+
 The identity layer of AI-Native OS: who we are, why we exist, how we think, and how we are organized.
 Every other part of the system inherits from here.
 

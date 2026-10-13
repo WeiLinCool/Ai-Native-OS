@@ -1,5 +1,7 @@
 # AI Engineering
 
+English | [中文](README.zh.md)
+
 AI is treated as an engineering discipline, not prompt-writing. This department owns the standards, evaluation, and security for building reliable intelligent systems. The multi-agent orchestration and memory live in [orchestration/](../../../ai/orchestration/) and [memory/](../../../ai/memory/); this department covers AI-specific engineering. It reports to the [CTO](../../company/roles.md) with scientific validation from the [Chief Scientist](../../company/roles.md).
 
 ## Index

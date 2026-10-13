@@ -1,0 +1,104 @@
+# Documentation Constraint Configuration
+# Schema: docs-constraint/v1
+#
+# Toolchain: the doc-constraint skill (run-gates.ts + gate scripts in scripts/,
+# no npm dependencies - plain `node --experimental-strip-types`).
+# Run every enabled gate with:
+#
+#   node --experimental-strip-types scripts/run-gates.ts
+#
+# The language switcher contract and how to add a new bilingual README are
+# documented in CONTRIBUTING.md ("Bilingual documentation").
+
+schema: docs-constraint/v1
+
+# ============================================================
+# TIER TAXONOMY - one home per fact
+# ============================================================
+
+tiers:
+  - name: package-readme
+    pattern: "**/README.md"
+    job: "Per-area index and contract"
+    budget: null
+    required: true
+
+  - name: handbook
+    pattern: "handbook/**/*.md"
+    job: "The human-facing operating manual"
+    budget: null
+    required: false
+
+  - name: ai-specs
+    pattern: "ai/**/*.md"
+    job: "Agent specifications, orchestration kernel, memory"
+    budget: null
+    required: false
+
+  - name: starter-kits
+    pattern: "starter-kits/**/*.md"
+    job: "Preconfigured company types"
+    budget: null
+    required: false
+
+  - name: runtime
+    pattern: "runtime/**/*.md"
+    job: "The executable orchestration kernel"
+    budget: null
+    required: false
+
+# ============================================================
+# BILINGUAL PAIRING - three-file triplets for every README
+# ============================================================
+# Every README.md has a Chinese counterpart README.zh.md and a
+# consistency record README.i18n.yaml (git blob hashes of both).
+# The counterpart must keep the source's structural signature:
+# heading levels, code blocks (language + line count), table
+# dimensions, and list item counts.
+
+i18n:
+  enabled: true
+  source_language: en
+  target_languages:
+    - zh
+  suffix_map:
+    zh: ".zh.md"
+  scope_patterns:
+    - "**/README.md"
+  exclusions:
+    # Agent instruction files stay English-only.
+    - ".agents"
+    - "AGENTS.md"
+    - "CLAUDE.md"
+
+# ============================================================
+# MECHANICAL GATES
+# ============================================================
+
+gates:
+  # Bilingual README pairs are the gate this repository enforces.
+  verify_translation_pairing: true
+  # verify-md-links is off on purpose: it requires file link targets, while this
+  # repository links directories ("../ai-startup/", "handbook/standards/") by
+  # convention. scripts/check-links.py covers link integrity in CI instead.
+  verify_md_links: false
+  # No word budgets and no Agent Notes tree are in use here.
+  verify_doc_budgets: false
+  verify_agent_note_format: false
+  verify_agent_note_classification: false
+  verify_archived_agent_notes: false
+
+gate_config:
+  verify_doc_budgets:
+    headroom_percent: 5
+    fail_on_missing: false
+
+# ============================================================
+# CI INTEGRATION
+# ============================================================
+
+ci:
+  platform: github
+  on_pull_request: true
+  on_push_main: true
+  fail_on_violation: true

@@ -1,5 +1,7 @@
 # Documentation
 
+English | [中文](README.zh.md)
+
 Documentation makes the company's knowledge - for customers and for the team - accurate, findable, and current. It owns product docs, API references, internal knowledge, and the information architecture that ties them together. It partners with the [Documentation Maintenance Agent](../../../ai/agents/post-launch/documentation-maintenance-agent.md) (which fights drift) and reports to the [COO](../../company/roles.md).
 
 ## Index

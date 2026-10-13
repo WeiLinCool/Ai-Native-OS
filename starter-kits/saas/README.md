@@ -1,5 +1,7 @@
 # Starter Kit: SaaS
 
+English | [中文](README.zh.md)
+
 A multi-tenant subscription software company serving businesses or consumers.
 
 ## What it inherits (unchanged)

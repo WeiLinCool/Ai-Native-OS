@@ -1,5 +1,7 @@
 # Agents — The AI Organization
 
+English | [中文](README.zh.md)
+
 Every AI agent is an expert. No agent attempts to do every job. Complex work is decomposed into
 specialized tasks and coordinated by the [orchestration kernel](../orchestration/README.md). Each
 agent owns its domain, and every important decision requires review from multiple perspectives.

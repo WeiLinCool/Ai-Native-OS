@@ -1,5 +1,7 @@
 # Data
 
+English | [中文](README.zh.md)
+
 Data turns raw events into trustworthy datasets, metrics, and insight - the fuel for product decisions, [AI](../ai-engineering/README.md) grounding, and company [dashboards](../post-launch/dashboards.md). It owns pipelines, data quality, modeling, analytics, and governance. It reports to the [CTO](../../company/roles.md).
 
 ## Index

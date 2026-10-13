@@ -1,5 +1,7 @@
 # Ai-Native-OS Runtime
 
+English | [中文](README.zh.md)
+
 **The executable form of the [orchestration kernel](../ai/orchestration/README.md).**
 
 `ai/agents/` holds 107 agent *specifications*. This package reads them and runs them: it selects the

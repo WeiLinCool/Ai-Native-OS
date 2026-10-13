@@ -1,5 +1,7 @@
 # Operations
 
+English | [中文](README.zh.md)
+
 Operations is the connective tissue that makes the company run: project and program management, internal processes, vendor and tooling management, knowledge and asset management, and the cadences that keep everyone aligned. It removes friction so every other department can focus on its craft. It reports to the [COO](../../company/roles.md).
 
 ## Index

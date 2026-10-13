@@ -1,5 +1,7 @@
 # Workflows
 
+English | [中文](README.zh.md)
+
 Cross-department processes that span the whole company. Department-specific workflows live in each
 department's `workflows.md`.
 

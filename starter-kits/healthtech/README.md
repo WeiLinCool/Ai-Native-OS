@@ -1,5 +1,7 @@
 # Starter Kit: Health Tech
 
+English | [中文](README.zh.md)
+
 A company building software or devices that touch patient care, clinical decisions, or health data.
 
 ## What it inherits (unchanged)

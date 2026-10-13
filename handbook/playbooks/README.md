@@ -1,5 +1,7 @@
 # Playbooks
 
+English | [中文](README.zh.md)
+
 Company-wide operational playbooks for recurring situations. Incident and reliability playbooks live
 with the department that runs them, in [post-launch/playbooks/](../departments/post-launch/playbooks/).
 

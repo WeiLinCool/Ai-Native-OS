@@ -1,5 +1,7 @@
 # Product Templates
 
+English | [中文](README.zh.md)
+
 Product uses the company-wide document templates directly:
 
 - [PRD](../../../templates/documents/prd.md)

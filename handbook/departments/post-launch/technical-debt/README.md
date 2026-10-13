@@ -1,5 +1,7 @@
 # Technical Debt
 
+English | [中文](README.zh.md)
+
 Debt is not a moral failing - it is a deliberate trade made under time pressure. What is unacceptable is
 **undocumented, untracked, unrepaid** debt. This folder is the system that keeps debt visible and shrinking.
 

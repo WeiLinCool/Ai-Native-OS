@@ -1,5 +1,7 @@
 # Starter Kit: Marketplace
 
+English | [中文](README.zh.md)
+
 A two-sided platform connecting supply and demand (buyers/sellers, riders/drivers, etc.).
 
 ## What it inherits (unchanged)

@@ -1,5 +1,7 @@
 # Investor Relations
 
+English | [中文](README.zh.md)
+
 Investor Relations keeps investors and the board accurately informed and engaged, manages reporting and governance, and supports fundraising. Trust with investors is built through consistent, honest communication - good news and bad. It reports to the [CEO](../../company/roles.md) and [CFO](../../company/roles.md).
 
 ## Index

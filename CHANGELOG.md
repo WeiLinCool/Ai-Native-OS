@@ -3,6 +3,26 @@
 All notable changes to AI-Native OS. The format is based on [Keep a Changelog](https://keepachangelog.com);
 AI-Native OS uses date-based versions since it is a living framework, not shipped software.
 
+## [3.2] - 2026-10 — bilingual READMEs
+
+Every README now ships with a Chinese counterpart and a machine-checked consistency record.
+
+### Added
+- **Bilingual README triplets** — 106 x `README.md` + `README.zh.md` + `README.i18n.yaml`, with a
+  language switcher on line 3 of every pair. Scope and rules live in [docs-constraint.yaml](docs-constraint.yaml)
+  and [CONTRIBUTING.md](CONTRIBUTING.md#bilingual-documentation).
+- **Documentation gates** — the dependency-free doc-constraint toolchain in [scripts/](scripts/):
+  [`run-gates.ts`](scripts/run-gates.ts) dispatches the enabled gates, and
+  [`verify-translation-pairing.ts`](scripts/verify-translation-pairing.ts) enforces counterpart existence,
+  a matching structural signature (headings, code blocks, tables, lists) and recorded git blob hashes.
+- **[`scripts/i18n-record.py`](scripts/i18n-record.py)** — re-records the `.i18n.yaml` hashes after an edit.
+- **CI job** — `bilingual-docs` in [.github/workflows/docs-check.yml](.github/workflows/docs-check.yml)
+  runs the gates on every push and PR.
+
+### Changed
+- [scripts/check-structure.py](scripts/check-structure.py) ignores `*.zh.md` counterparts when counting
+  agent specs, and [STRUCTURE.md](STRUCTURE.md) documents the new tooling and config.
+
 ## [3.1] - 2026-10 — renamed to Ai-Native-OS
 
 The framework was forked from [rojenwai/CompanyOS](https://github.com/rojenwai/CompanyOS) and

@@ -1,5 +1,7 @@
 # Security
 
+English | [中文](README.zh.md)
+
 Security protects the company, its products, and its customers' data from threats. It owns threat modeling, secure architecture, penetration testing, vulnerability management, privacy, and compliance. It reports to the [Chief Security Officer](../../company/roles.md) and its reviewer can block releases that cannot be auto-overridden.
 
 ## Index

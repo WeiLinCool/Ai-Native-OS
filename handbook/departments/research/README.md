@@ -1,5 +1,7 @@
 # Research
 
+English | [中文](README.zh.md)
+
 Research discovers opportunities others overlook and turns them into defensible products. It answers the company's most important question - *what should we build next?* - with evidence, not opinion. It reports to the [Chief Scientist](../../company/roles.md) and feeds [strategy](../strategy/README.md) and [product](../product/README.md).
 
 ## Index

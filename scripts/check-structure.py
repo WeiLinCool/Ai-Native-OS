@@ -42,7 +42,8 @@ def main() -> int:
     agents = 0
     for dp, _, fns in os.walk(AGENTS_ROOT):
         for fn in fns:
-            if fn.endswith(".md") and fn not in ("README.md", "agent-template.md"):
+            # Bilingual counterparts (README.zh.md) are translations, not agent specs.
+            if fn.endswith(".md") and not fn.endswith(".zh.md") and fn not in ("README.md", "agent-template.md"):
                 agents += 1
                 with open(os.path.join(dp, fn), encoding="utf-8") as fh:
                     n = len(SECTION_RE.findall(fh.read()))

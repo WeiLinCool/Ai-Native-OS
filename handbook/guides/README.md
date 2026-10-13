@@ -1,5 +1,7 @@
 # Docs
 
+English | [中文](README.zh.md)
+
 Cross-cutting guides and repository meta-documentation.
 
 | Doc | Purpose |

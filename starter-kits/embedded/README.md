@@ -1,5 +1,7 @@
 # Starter Kit: Embedded Systems
 
+English | [中文](README.zh.md)
+
 A company building firmware-driven products on constrained hardware (devices, controllers, appliances).
 
 ## What it inherits (unchanged)

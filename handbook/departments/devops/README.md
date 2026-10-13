@@ -1,5 +1,7 @@
 # DevOps
 
+English | [中文](README.zh.md)
+
 DevOps builds the paths that get code safely and repeatably into production and keeps the infrastructure healthy. It owns CI/CD, infrastructure-as-code, environments, release engineering, and reliability tooling. It reports to the [CTO](../../company/roles.md) and works hand-in-hand with [engineering](../engineering/README.md) and [post-launch](../post-launch/README.md).
 
 ## Index

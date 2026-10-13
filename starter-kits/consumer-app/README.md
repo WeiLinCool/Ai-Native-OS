@@ -1,5 +1,7 @@
 # Starter Kit: Consumer App
 
+English | [中文](README.zh.md)
+
 A high-scale consumer product (mobile or web) that wins on engagement, retention, and growth loops.
 
 ## What it inherits (unchanged)

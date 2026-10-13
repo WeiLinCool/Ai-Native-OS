@@ -1,5 +1,7 @@
 # Finance
 
+English | [中文](README.zh.md)
+
 Finance keeps the company solvent, informed, and fundable. It owns forecasting, budgeting, accounting, revenue and billing, cost management, and the financial model behind fundraising. Running out of cash is the most common way companies die; finance's job is to make sure that never happens by surprise. It reports to the [CFO](../../company/roles.md).
 
 ## Index

@@ -1,5 +1,7 @@
 # Starter Kit: Robotics
 
+English | [中文](README.zh.md)
+
 A company building autonomous or teleoperated physical robots (hardware + AI + software).
 
 ## What it inherits (unchanged)

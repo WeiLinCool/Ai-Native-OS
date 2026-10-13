@@ -1,5 +1,7 @@
 # Starter Kit: Fintech
 
+English | [中文](README.zh.md)
+
 A company that moves, stores, or lends money - payments, banking, lending, or financial infrastructure.
 
 ## What it inherits (unchanged)

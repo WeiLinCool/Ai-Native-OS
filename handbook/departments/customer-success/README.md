@@ -1,5 +1,7 @@
 # Customer Success
 
+English | [中文](README.zh.md)
+
 Customer Success makes customers successful after they buy - driving adoption, health, retention, and expansion. Retention compounds; keeping and growing customers is cheaper and more durable than acquiring new ones. It complements [post-launch support](../post-launch/support.md) (which handles product reliability and tickets) by owning the relationship and outcomes. It reports to the [COO](../../company/roles.md).
 
 ## Index

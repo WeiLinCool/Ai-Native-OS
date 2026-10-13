@@ -1,5 +1,7 @@
 # Legal
 
+English | [中文](README.zh.md)
+
 Legal protects the company from legal and regulatory risk and enables it to move fast safely. It owns contracts, intellectual property, licensing, privacy policy and terms, and regulatory compliance. Mistakes here are expensive and slow to reverse, so legal is a gate on high-risk actions. It reports to the [Chief Legal Officer](../../company/roles.md).
 
 ## Index

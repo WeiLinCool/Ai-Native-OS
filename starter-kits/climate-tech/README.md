@@ -1,5 +1,7 @@
 # Starter Kit: Climate Tech
 
+English | [中文](README.zh.md)
+
 A company building physical or scientific solutions to climate problems - energy, materials, carbon, or industrial decarbonisation.
 
 ## What it inherits (unchanged)

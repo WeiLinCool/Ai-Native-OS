@@ -1,5 +1,7 @@
 # Engineering
 
+English | [中文](README.zh.md)
+
 > The engineering handbook defines the standards for every software, AI, embedded, robotics, and
 > hardware project. No engineer or AI agent may violate these standards unless explicitly approved
 > by the CTO.

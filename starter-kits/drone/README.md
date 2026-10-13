@@ -1,5 +1,7 @@
 # Starter Kit: Drone / UAV
 
+English | [中文](README.zh.md)
+
 A company building unmanned aerial vehicles - safety-critical hardware, autonomy, and heavy regulation.
 
 ## What it inherits (unchanged)

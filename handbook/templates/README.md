@@ -1,5 +1,7 @@
 # Templates
 
+English | [中文](README.zh.md)
+
 Reusable scaffolds used across AI-Native OS.
 
 | Template | Purpose |

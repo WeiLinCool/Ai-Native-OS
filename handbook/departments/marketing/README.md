@@ -1,5 +1,7 @@
 # Marketing
 
+English | [中文](README.zh.md)
+
 Marketing makes the right customers aware of, and drawn to, the product. It owns positioning and messaging, content and SEO, brand and communications, growth, and product launches. A great product no one hears about fails; marketing ensures that never happens. It reports to the [CMO](../../company/roles.md).
 
 ## Index

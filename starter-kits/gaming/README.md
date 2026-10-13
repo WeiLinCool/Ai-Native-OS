@@ -1,5 +1,7 @@
 # Starter Kit: Gaming
 
+English | [中文](README.zh.md)
+
 A studio building games as a live, evolving product - engagement, content cadence, and community.
 
 ## What it inherits (unchanged)

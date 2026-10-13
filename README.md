@@ -1,8 +1,10 @@
 # Ai-Native-OS
 
+English | [中文](README.zh.md)
+
 > **The open-source operating system for AI-native technology companies.**
 >
-> Version: 3.1 · Clone it, customize it, and run a company from idea to global scale.
+> Version: 3.2 · Clone it, customize it, and run a company from idea to global scale.
 
 AI-Native OS is not a prompt repository, a code template, or a business plan. It is the **central
 source of truth** for how an AI-native company operates: organizational structure, engineering
@@ -106,9 +108,10 @@ python scripts/check-links.py        # every internal link resolves
 python scripts/check-structure.py    # departments + agent specs conform
 python scripts/check-conventions.py  # README per folder, no placeholder text
 python runtime/run_tests.py          # the runtime still orchestrates your agents
+node --experimental-strip-types scripts/run-gates.ts   # bilingual README pairs stay consistent
 ```
 
-All four run in CI on every push and PR. If you removed a department, `check-links.py` points you at every
+All five run in CI on every push and PR. If you removed a department, `check-links.py` points you at every
 link that still references it.
 
 👉 Full detail, including how to add a department or agent by hand: **[CUSTOMIZE.md](CUSTOMIZE.md)**.
@@ -160,7 +163,7 @@ ai-native-os/
 │   └── ai-startup/ saas/ developer-tools/ enterprise-b2b/ marketplace/
 │       consumer-app/ robotics/ drone/ embedded/ iot/ research-lab/
 │
-├── scripts/                       doc CI tooling: check-links.py, check-structure.py
+├── scripts/                       doc CI tooling: checkers, doc gates, scaffolding
 ├── .github/                       issue/PR templates, community health, CI workflows
 │
 └── README.md  CUSTOMIZE.md  STRUCTURE.md  GLOSSARY.md
@@ -293,6 +296,8 @@ Preconfigured company types that inherit the AI-Native OS core and add domain de
 | [scripts/check-links.py](scripts/check-links.py) | Every internal link resolves |
 | [scripts/check-structure.py](scripts/check-structure.py) | Departments and agent specs conform |
 | [scripts/check-conventions.py](scripts/check-conventions.py) | Every folder self-indexes; no placeholder text |
+| [scripts/run-gates.ts](scripts/run-gates.ts) | Documentation gates: bilingual README pairs stay consistent |
+| [scripts/i18n-record.py](scripts/i18n-record.py) | Re-record the bilingual pairing hashes |
 
 The three checkers run in CI on every push and PR ([.github/](.github/), which also holds issue/PR
 templates, code of conduct, security policy, support, funding, and a stale-issue bot).

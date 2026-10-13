@@ -1,5 +1,7 @@
 # Starter Kit: Developer Tools
 
+English | [中文](README.zh.md)
+
 A company whose customers are developers - APIs, SDKs, CLIs, libraries, or platforms.
 
 ## What it inherits (unchanged)

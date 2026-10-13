@@ -1,5 +1,7 @@
 # AI — the machine side
 
+English | [中文](README.zh.md)
+
 **Everything the AI agent workforce runs on.** This is not reading material about AI; it is the
 operational specification of the agents themselves, how they are coordinated, and what they remember.
 

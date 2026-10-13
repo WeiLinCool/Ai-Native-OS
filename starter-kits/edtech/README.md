@@ -1,5 +1,7 @@
 # Starter Kit: Ed Tech
 
+English | [中文](README.zh.md)
+
 A company building learning products for students, educators, or institutions.
 
 ## What it inherits (unchanged)

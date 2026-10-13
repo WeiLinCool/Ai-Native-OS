@@ -29,6 +29,24 @@ jobs:
       - name: Verify authoring conventions
         run: python scripts/check-conventions.py
 
+  bilingual-docs:
+    name: Bilingual documentation pairs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # Dependency-free gates: every README needs a README.zh.md counterpart and a
+      # README.i18n.yaml record, with a matching structure and recorded hashes.
+      # Scope and enabled gates live in docs-constraint.yaml.
+      - name: Run documentation gates
+        run: node --experimental-strip-types scripts/run-gates.ts
+
   runtime-tests:
     name: Runtime test suite
     runs-on: ubuntu-latest

@@ -1,5 +1,7 @@
 # Design
 
+English | [中文](README.zh.md)
+
 Design makes the product usable, accessible, coherent, and trustworthy. It is not decoration - it is
 how customers experience everything engineering and product build. Design owns the research into user
 behavior, the interaction and visual language, the design system, and the accessibility bar. It reports

@@ -1,5 +1,7 @@
 # Handbook — the reading side
 
+English | [中文](README.zh.md)
+
 **Everything a human reads.** This is the company operating manual: identity, governance, the twenty
 department manuals, shared workflows and standards, playbooks, templates, and guides.
 

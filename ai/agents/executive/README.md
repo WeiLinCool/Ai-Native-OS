@@ -1,5 +1,7 @@
 # Executive Division — the C-Suite
 
+English | [中文](README.zh.md)
+
 The executive layer sits between the human founder and the twenty specialist divisions. Executives
 **set direction and own quality** in their domain; they delegate implementation and never do it
 themselves. Each one is the accountable owner of the departments listed below — which is what makes

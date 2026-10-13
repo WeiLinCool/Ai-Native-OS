@@ -33,6 +33,7 @@ This page now records what exists and how to extend it.
 ### Tooling & CI
 - **[scripts/scaffold.py](scripts/scaffold.py)** — scaffold a new department or agent from the templates.
 - **Three CI checks**, run on every push and PR: [check-links.py](scripts/check-links.py) (link integrity), [check-structure.py](scripts/check-structure.py) (department + agent conformance), [check-conventions.py](scripts/check-conventions.py) (self-indexing folders, no placeholder text, markdown hygiene).
+- **Bilingual documentation gates** — every README ships as `README.md` + `README.zh.md` + `README.i18n.yaml`; [run-gates.ts](scripts/run-gates.ts) checks the triplets in CI and [i18n-record.py](scripts/i18n-record.py) re-records their hashes.
 - **Community health** — [.github/](.github/): issue & PR templates, code of conduct, security policy, support, funding, and a stale-issue bot.
 
 ## Extending it

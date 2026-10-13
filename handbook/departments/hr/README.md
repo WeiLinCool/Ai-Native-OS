@@ -1,5 +1,7 @@
 # People & HR
 
+English | [中文](README.zh.md)
+
 People & HR builds and sustains the team that builds everything else. It owns recruiting, onboarding, performance and growth, compensation, and culture - for both human employees and the way [AI agents](../../../ai/agents/README.md) and humans work together. Hiring is the founder's highest-leverage activity; this department makes it repeatable. It reports to the [COO](../../company/roles.md).
 
 ## Index

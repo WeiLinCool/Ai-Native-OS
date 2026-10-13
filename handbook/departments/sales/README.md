@@ -1,5 +1,7 @@
 # Sales
 
+English | [中文](README.zh.md)
+
 Sales turns qualified interest into paying customers and durable relationships. It owns prospecting, discovery, solution fit, negotiation, and closing - founder-led at first, then a repeatable motion. It works the funnel defined in [go-to-market](../strategy/go-to-market.md) and reports to the [CMO](../../company/roles.md)/CEO.
 
 ## Index

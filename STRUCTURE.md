@@ -42,19 +42,24 @@ ai-native-os (repository root)
 │   └── tests/               Test suite (stdlib unittest; mocked providers, no API calls)
 │
 ├── starter-kits/        Preconfigured company types that inherit the AI-Native OS core
-├── scripts/             Repo tooling (link + structure checkers, run in CI)
+├── scripts/             Repo tooling: Markdown checkers + the bilingual doc gates (CI)
+├── docs-constraint.yaml Doc constraint config — bilingual README scope and enabled gates
 ├── .github/             Community health files + CI workflows
 │
-├── README.md            The AI-Native OS hub
+├── README.md            The AI-Native OS hub, with README.zh.md as its Chinese counterpart
 ├── CUSTOMIZE.md         How to make this repo your own
 ├── STRUCTURE.md         This file
-├── CONTRIBUTING.md      Authoring conventions
+├── CONTRIBUTING.md      Authoring conventions (incl. the bilingual contract)
 ├── GLOSSARY.md          Shared vocabulary
 ├── CHANGELOG.md         What changed, by version
 └── ROADMAP.md           What's built and what's next
 ```
 
 The repository root **is** AI-Native OS — there is no redundant `ai-native-os/` nesting.
+
+**Bilingual READMEs:** every `README.md` ships with a `README.zh.md` counterpart and a
+`README.i18n.yaml` hash record. `scripts/run-gates.ts` enforces the triplets; see
+[CONTRIBUTING.md](CONTRIBUTING.md#bilingual-documentation).
 
 **Naming note:** `ai/` is the AI *workforce* (agents, orchestration, memory). The *discipline* of
 building AI products is a department: `handbook/departments/ai-engineering/`.

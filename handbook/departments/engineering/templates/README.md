@@ -1,5 +1,7 @@
 # Engineering Templates
 
+English | [中文](README.zh.md)
+
 Engineering-specific templates. Company-wide document templates (ADR, RFC, security review, release
 checklist) live in [templates/documents/](../../../templates/documents/) — use those directly:
 

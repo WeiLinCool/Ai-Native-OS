@@ -1,5 +1,7 @@
 # Starter Kit: Research Lab
 
+English | [中文](README.zh.md)
+
 A research-first organization that produces novel science/technology and turns it into defensible products or IP.
 
 ## What it inherits (unchanged)

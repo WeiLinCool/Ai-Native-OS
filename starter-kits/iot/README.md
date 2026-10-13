@@ -1,5 +1,7 @@
 # Starter Kit: IoT Platform
 
+English | [中文](README.zh.md)
+
 A company operating fleets of connected devices feeding cloud services and data pipelines.
 
 ## What it inherits (unchanged)

@@ -45,6 +45,40 @@ or extend content so the system stays consistent.
 
 ---
 
+## Bilingual documentation
+
+Every `README.md` in this repository is a **triplet**:
+
+| File | Role |
+|---|---|
+| `README.md` | English source — the source of truth |
+| `README.zh.md` | Chinese counterpart |
+| `README.i18n.yaml` | Consistency record — the git blob hash of both files |
+
+`node --experimental-strip-types scripts/run-gates.ts` (also run in CI) enforces the triplet through
+[scripts/verify-translation-pairing.ts](scripts/verify-translation-pairing.ts): both counterparts must
+exist, the record must match the current English source, and the Chinese file must keep the source's
+**structural signature** — heading levels, code blocks (language + line count), table dimensions, and
+list item counts.
+
+To add or change a bilingual README:
+
+1. Edit `README.md` (or its counterpart) as usual.
+2. Translate: `README.zh.md` mirrors the source one structure element at a time. Prose is Chinese; code,
+   commands, paths, identifiers, and link targets stay exactly as they are in the source.
+3. Keep the language switcher: line 3 is `English | [中文](README.zh.md)` in the English file and
+   `[English](README.md) | 中文` in the Chinese one.
+4. Same-file anchors (`#anchor`) are the only links that change — they point at the translated heading's
+   slug (lowercase, spaces become `-`, so headings carry no punctuation).
+5. Re-record and verify: `python scripts/i18n-record.py` (add `--only <path>` to limit it), then run the
+   gate again.
+
+Scope and configuration live in [docs-constraint.yaml](docs-constraint.yaml); the gates themselves are
+dependency-free scripts in `scripts/`, run with `node --experimental-strip-types` (Node 22+), so
+`run-gates.ts` needs nothing installed.
+
+---
+
 ## Review before merge
 
 Every change should satisfy:
@@ -52,6 +86,7 @@ Every change should satisfy:
 - [ ] Follows the standard structure for its type (department / agent / document).
 - [ ] No placeholder or filler text.
 - [ ] All internal links resolve.
+- [ ] Bilingual counterpart and its `.i18n.yaml` record are up to date (READMEs only).
 - [ ] Terminology matches the glossary.
 - [ ] Cross-links to related areas are present.
 - [ ] The root README map and STRUCTURE.md are updated if a new top-level area was added.
