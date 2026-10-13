@@ -3,6 +3,14 @@
 All notable changes to AI-Native OS. The format is based on [Keep a Changelog](https://keepachangelog.com);
 AI-Native OS uses date-based versions since it is a living framework, not shipped software.
 
+## [3.2.1] - 2026-10 — sandbox path fix
+
+### Fixed
+- The tool sandbox now refuses Windows-style drive paths (`C:/...`) as absolute on every
+  platform, not only on Windows — on POSIX such a path used to be treated as repository-relative.
+  [tests.test_tools](runtime/tests/test_tools.py) passes again: `python runtime/run_tests.py` →
+  222/222 OK, so the runtime CI job is green.
+
 ## [3.2] - 2026-10 — bilingual READMEs
 
 Every README now ships with a Chinese counterpart and a machine-checked consistency record.
