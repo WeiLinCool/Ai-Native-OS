@@ -32,10 +32,14 @@ def _safe_path(raw: str, context: ToolContext) -> Path:
     """
     if not raw or not raw.strip():
         raise ToolSandboxError("path is required")
-    candidate = Path(raw.strip().replace("\\", "/"))
+    raw_path = raw.strip().replace("\\", "/")
+    candidate = Path(raw_path)
     # `root` catches a leading slash, which Windows does not consider absolute
-    # (it has no drive) but which must still be refused everywhere.
-    if candidate.is_absolute() or candidate.drive or candidate.root:
+    # (it has no drive) but which must still be refused everywhere. A drive
+    # letter is matched explicitly: on POSIX, Path("C:/x").drive is empty and the
+    # path is not absolute, so a Windows-style path would otherwise be treated as
+    # repository-relative and resolved inside the sandbox.
+    if candidate.is_absolute() or candidate.drive or candidate.root or re.match(r"^[A-Za-z]:", raw_path):
         raise ToolSandboxError(f"absolute paths are not permitted: {raw!r}")
 
     root = context.root.resolve()
