@@ -1,6 +1,6 @@
 # Roadmap
 
-**The roadmap is complete.** Every direction previously listed has been built. Company OS is a finished,
+**The roadmap is complete.** Every direction previously listed has been built. AI-Native OS is a finished,
 self-verifying framework: an executive C-suite, 20 departments, 107 agents, 16 starter kits, 17 document
 templates, 11 playbooks, the guides, the scaffolding CLI, and three CI checks.
 
@@ -37,7 +37,7 @@ This page now records what exists and how to extend it.
 
 ## Extending it
 
-Company OS is designed to be forked and shaped, not to grow indefinitely here. To extend it for your
+AI-Native OS is designed to be forked and shaped, not to grow indefinitely here. To extend it for your
 company, follow [CUSTOMIZE.md](CUSTOMIZE.md):
 
 ```bash

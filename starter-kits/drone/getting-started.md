@@ -7,4 +7,4 @@
 5. Test geofencing and fail-safes exhaustively ([Hardware Test Agent](../../ai/agents/hardware/hardware-test-agent.md)).
 6. Operate under compliance with fleet monitoring and [incident response](../../handbook/departments/post-launch/incident-response.md).
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import unittest
 
-from companyos.errors import NoSuitableAgentError
-from companyos.orchestration.selector import AgentSelector
+from ai_native_os.errors import NoSuitableAgentError
+from ai_native_os.orchestration.selector import AgentSelector
 
 from . import support
 

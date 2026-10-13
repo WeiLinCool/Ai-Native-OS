@@ -6,7 +6,7 @@ friction between their problem and your solution. This is persuasion in service 
 
 > **Persuasion is not manipulation.** Persuasion helps someone make a decision that genuinely serves them,
 > with honest information. Manipulation pushes someone toward a decision against their interest using
-> deception or pressure. Company OS only ever does the former - see [the ethical line](#the-ethical-line)
+> deception or pressure. AI-Native OS only ever does the former - see [the ethical line](#the-ethical-line)
 > and the sales principle of [honesty](principles.md). Manipulation wins a deal and loses a customer.
 
 ## How buyers actually decide

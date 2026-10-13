@@ -1,4 +1,4 @@
-# CompanyOS Runtime
+# Ai-Native-OS Runtime
 
 **The executable form of the [orchestration kernel](../ai/orchestration/README.md).**
 
@@ -9,7 +9,7 @@ reviews the results, and synthesizes an answer.
 No dependencies. No API key required to try it.
 
 ```bash
-python -m companyos run "Design and implement authentication for a web application."
+python -m ai_native_os run "Design and implement authentication for a web application."
 ```
 
 ---
@@ -23,7 +23,7 @@ python -m companyos run "Design and implement authentication for a web applicati
 | **Count** | 117 (107 specs + the kernel agents) | Typically 3–6 per run, capped by `max_agents` |
 | **Lifetime** | Forever | Spawned → executes → result captured → terminated |
 | **State** | Immutable, shared | Its own task, scoped context, and tool grant |
-| **Type** | [`AgentDefinition`](companyos/registry/definition.py) | [`AgentInstance`](companyos/orchestration/spawner.py) |
+| **Type** | [`AgentDefinition`](ai_native_os/registry/definition.py) | [`AgentInstance`](ai_native_os/orchestration/spawner.py) |
 
 **There are never 107 running agents.** The registry holds 117 definitions; a run instantiates only
 the handful the task actually calls for, and terminates each one as soon as its result is captured.
@@ -73,23 +73,23 @@ Final response + Agent Map
 
 | Component | Module | Reads its behaviour from |
 |---|---|---|
-| **Agent Registry** | [`registry/registry.py`](companyos/registry/registry.py) | `ai/agents/**`, `ai/orchestration/*` |
-| Spec parser | [`registry/parser.py`](companyos/registry/parser.py) | the 11-section spec format |
-| Capability taxonomy | [`registry/capabilities.py`](companyos/registry/capabilities.py) | — |
-| **Planner** | [`orchestration/planner.py`](companyos/orchestration/planner.py) | [`planner.md`](../ai/orchestration/planner.md) |
-| **Task Decomposer** | [`orchestration/decomposer.py`](companyos/orchestration/decomposer.py) | [`task-decomposer.md`](../ai/orchestration/task-decomposer.md) |
-| **Agent Selector** | [`orchestration/selector.py`](companyos/orchestration/selector.py) | [`task-routing.md`](../ai/orchestration/task-routing.md) |
-| **Agent Spawner** | [`orchestration/spawner.py`](companyos/orchestration/spawner.py) | — |
-| **Scheduler** | [`orchestration/scheduler.py`](companyos/orchestration/scheduler.py) | [`coordinator.md`](../ai/orchestration/coordinator.md) |
-| **Context builder** | [`orchestration/context.py`](companyos/orchestration/context.py) | [`context-management.md`](../ai/memory/context-management.md) |
-| **Result Aggregator** | [`orchestration/aggregator.py`](companyos/orchestration/aggregator.py) | — |
-| **Reviewer** | [`orchestration/reviewer.py`](companyos/orchestration/reviewer.py) | [`reviewer.md`](../ai/orchestration/reviewer.md), [`approval-engine.md`](../ai/orchestration/approval-engine.md) |
-| **Synthesizer** | [`orchestration/synthesizer.py`](companyos/orchestration/synthesizer.py) | [`ceo-agent.md`](../ai/orchestration/ceo-agent.md) |
-| **Agent Map** | [`orchestration/agent_map.py`](companyos/orchestration/agent_map.py) | — |
-| **Memory** | [`memory/`](companyos/memory/) | [`ai/memory/`](../ai/memory/README.md), [`retrieval.md`](../ai/memory/retrieval.md) |
-| **Tools + policy** | [`tools/`](companyos/tools/) | each spec's section 5 |
-| **Providers** | [`providers/`](companyos/providers/) | — |
-| **Observability** | [`observability/trace.py`](companyos/observability/trace.py) | [`execution-lifecycle.md`](../ai/orchestration/execution-lifecycle.md) |
+| **Agent Registry** | [`registry/registry.py`](ai_native_os/registry/registry.py) | `ai/agents/**`, `ai/orchestration/*` |
+| Spec parser | [`registry/parser.py`](ai_native_os/registry/parser.py) | the 11-section spec format |
+| Capability taxonomy | [`registry/capabilities.py`](ai_native_os/registry/capabilities.py) | — |
+| **Planner** | [`orchestration/planner.py`](ai_native_os/orchestration/planner.py) | [`planner.md`](../ai/orchestration/planner.md) |
+| **Task Decomposer** | [`orchestration/decomposer.py`](ai_native_os/orchestration/decomposer.py) | [`task-decomposer.md`](../ai/orchestration/task-decomposer.md) |
+| **Agent Selector** | [`orchestration/selector.py`](ai_native_os/orchestration/selector.py) | [`task-routing.md`](../ai/orchestration/task-routing.md) |
+| **Agent Spawner** | [`orchestration/spawner.py`](ai_native_os/orchestration/spawner.py) | — |
+| **Scheduler** | [`orchestration/scheduler.py`](ai_native_os/orchestration/scheduler.py) | [`coordinator.md`](../ai/orchestration/coordinator.md) |
+| **Context builder** | [`orchestration/context.py`](ai_native_os/orchestration/context.py) | [`context-management.md`](../ai/memory/context-management.md) |
+| **Result Aggregator** | [`orchestration/aggregator.py`](ai_native_os/orchestration/aggregator.py) | — |
+| **Reviewer** | [`orchestration/reviewer.py`](ai_native_os/orchestration/reviewer.py) | [`reviewer.md`](../ai/orchestration/reviewer.md), [`approval-engine.md`](../ai/orchestration/approval-engine.md) |
+| **Synthesizer** | [`orchestration/synthesizer.py`](ai_native_os/orchestration/synthesizer.py) | [`ceo-agent.md`](../ai/orchestration/ceo-agent.md) |
+| **Agent Map** | [`orchestration/agent_map.py`](ai_native_os/orchestration/agent_map.py) | — |
+| **Memory** | [`memory/`](ai_native_os/memory/) | [`ai/memory/`](../ai/memory/README.md), [`retrieval.md`](../ai/memory/retrieval.md) |
+| **Tools + policy** | [`tools/`](ai_native_os/tools/) | each spec's section 5 |
+| **Providers** | [`providers/`](ai_native_os/providers/) | — |
+| **Observability** | [`observability/trace.py`](ai_native_os/observability/trace.py) | [`execution-lifecycle.md`](../ai/orchestration/execution-lifecycle.md) |
 
 ---
 
@@ -113,7 +113,7 @@ text, title and folder. A task's required capabilities are then scored against e
 Inspect it directly:
 
 ```bash
-python -m companyos select "threat model the login flow" -c security.threat-modeling
+python -m ai_native_os select "threat model the login flow" -c security.threat-modeling
 ```
 
 ```
@@ -130,7 +130,7 @@ python -m companyos select "threat model the login flow" -c security.threat-mode
 
 ## Parallel execution
 
-The [scheduler](companyos/orchestration/scheduler.py) walks the task DAG and starts a task the moment
+The [scheduler](ai_native_os/orchestration/scheduler.py) walks the task DAG and starts a task the moment
 *its own* dependencies complete — it does not wait for a whole wave. Independent tasks run
 concurrently up to `max_parallel`; dependent ones cannot overlap by construction.
 
@@ -237,11 +237,11 @@ The orchestrator talks to one interface and never to a vendor SDK.
 | `local` | Any OpenAI-compatible server — Ollama, vLLM, LM Studio — via `--base-url` |
 
 ```bash
-python -m companyos run "..." --provider anthropic --model claude-sonnet-5
-python -m companyos run "..." --provider local --base-url http://localhost:11434/v1
+python -m ai_native_os run "..." --provider anthropic --model claude-sonnet-5
+python -m ai_native_os run "..." --provider local --base-url http://localhost:11434/v1
 ```
 
-Register your own with `companyos.providers.register_provider(name, factory)`.
+Register your own with `ai_native_os.providers.register_provider(name, factory)`.
 
 ### About the mock provider
 
@@ -255,21 +255,21 @@ and for tests; it is not a substitute for a model's reasoning.
 ## Running it
 
 ```bash
-python -m companyos doctor                     # check specs, memory, and paths
-python -m companyos run "<request>"            # orchestrate, offline
-python -m companyos run "<request>" -v         # stream every event
-python -m companyos run "<request>" --map m.json --save run.json
-python -m companyos agents list --division security
-python -m companyos agents show cto-agent
-python -m companyos select "<task>" -c <capability>
-python -m companyos capabilities
-python -m companyos map m.json                 # render a saved Agent Map
+python -m ai_native_os doctor                     # check specs, memory, and paths
+python -m ai_native_os run "<request>"            # orchestrate, offline
+python -m ai_native_os run "<request>" -v         # stream every event
+python -m ai_native_os run "<request>" --map m.json --save run.json
+python -m ai_native_os agents list --division security
+python -m ai_native_os agents show cto-agent
+python -m ai_native_os select "<task>" -c <capability>
+python -m ai_native_os capabilities
+python -m ai_native_os map m.json                 # render a saved Agent Map
 ```
 
 From Python:
 
 ```python
-from companyos import Orchestrator, RuntimeConfig
+from ai_native_os import Orchestrator, RuntimeConfig
 
 config = RuntimeConfig.load()                  # auto-detects the repo root
 orchestrator = Orchestrator(config)
@@ -279,7 +279,7 @@ print(run.final_output)
 print(orchestrator.agent_map(run))             # the execution graph, as data
 ```
 
-Configuration can also come from a `companyos.json` at the repository root:
+Configuration can also come from an `ai-native-os.json` at the repository root:
 
 ```json
 {
@@ -332,7 +332,7 @@ being created**.
 
 ## Observability
 
-Every run writes a JSONL trace to `.companyos/runs/<run_id>.jsonl`, one line per event:
+Every run writes a JSONL trace to `.ai-native-os/runs/<run_id>.jsonl`, one line per event:
 
 ```
 run.started · plan.created · tasks.decomposed · agent.selected · agent.spawned · agent.started
@@ -377,7 +377,7 @@ pytest tests                         # if you have pytest
 ## Extending it
 
 - **Add an agent** — write the Markdown spec. Nothing else.
-- **Add a capability** — one entry in `TAXONOMY` ([`capabilities.py`](companyos/registry/capabilities.py)).
+- **Add a capability** — one entry in `TAXONOMY` ([`capabilities.py`](ai_native_os/registry/capabilities.py)).
 - **Add a provider** — implement `Provider.complete`, call `register_provider`.
 - **Add a tool** — define a `Tool`, add it to `BUILTIN_TOOLS`, grant it via `default_tools`.
 - **Distribute it** — `DAGScheduler` is the only component that assumes local execution. Replacing its

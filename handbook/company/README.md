@@ -1,6 +1,6 @@
 # Company
 
-The identity layer of Company OS: who we are, why we exist, how we think, and how we are organized.
+The identity layer of AI-Native OS: who we are, why we exist, how we think, and how we are organized.
 Every other part of the system inherits from here.
 
 ## Index

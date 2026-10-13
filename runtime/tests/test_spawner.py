@@ -4,15 +4,15 @@ from __future__ import annotations
 
 import unittest
 
-from companyos.config import Budget
-from companyos.errors import LimitExceeded, ProviderError
-from companyos.models import Task
-from companyos.observability import EventType
-from companyos.orchestration.context import ContextBuilder
-from companyos.orchestration.spawner import AgentSpawner
-from companyos.providers import Completion, Message, Provider, ToolCall
-from companyos.status import TaskStatus
-from companyos.tools import ToolRegistry
+from ai_native_os.config import Budget
+from ai_native_os.errors import LimitExceeded, ProviderError
+from ai_native_os.models import Task
+from ai_native_os.observability import EventType
+from ai_native_os.orchestration.context import ContextBuilder
+from ai_native_os.orchestration.spawner import AgentSpawner
+from ai_native_os.providers import Completion, Message, Provider, ToolCall
+from ai_native_os.status import TaskStatus
+from ai_native_os.tools import ToolRegistry
 
 from . import support
 
@@ -32,7 +32,7 @@ def make_spawner(config=None, provider=None, bus=None, memory=None):
 
 
 def bundle_for(task: Task, config=None):
-    from companyos.models import TaskGraph
+    from ai_native_os.models import TaskGraph
 
     graph = TaskGraph([task])
     return ContextBuilder(config or support.config()).build(task, graph, {})

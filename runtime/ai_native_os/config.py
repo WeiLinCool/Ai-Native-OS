@@ -9,21 +9,21 @@ from pathlib import Path
 
 from .errors import ConfigError, LimitExceeded
 
-#: Marker directories that identify a CompanyOS repository root.
+#: Marker directories that identify an AI-Native OS repository root.
 _ROOT_MARKERS = (("ai", "agents"), ("ai", "orchestration"))
 
 
 def find_repo_root(start: Path | str | None = None) -> Path:
-    """Walk upwards from ``start`` until the CompanyOS spec tree is found.
+    """Walk upwards from ``start`` until the AI-Native OS spec tree is found.
 
-    ``COMPANYOS_ROOT`` overrides the search. Raises :class:`ConfigError` if no
+    ``AI_NATIVE_OS_ROOT`` overrides the search. Raises :class:`ConfigError` if no
     root is found, because a runtime with no agent definitions is useless.
     """
-    env = os.environ.get("COMPANYOS_ROOT")
+    env = os.environ.get("AI_NATIVE_OS_ROOT")
     if env:
         root = Path(env).expanduser().resolve()
         if not _is_root(root):
-            raise ConfigError(f"COMPANYOS_ROOT={root} does not contain ai/agents/")
+            raise ConfigError(f"AI_NATIVE_OS_ROOT={root} does not contain ai/agents/")
         return root
 
     here = Path(start or Path.cwd()).resolve()
@@ -31,7 +31,7 @@ def find_repo_root(start: Path | str | None = None) -> Path:
         if _is_root(candidate):
             return candidate
     raise ConfigError(
-        f"no CompanyOS root found above {here}; set COMPANYOS_ROOT to the repository root"
+        f"no AI-Native OS root found above {here}; set AI_NATIVE_OS_ROOT to the repository root"
     )
 
 
@@ -170,7 +170,7 @@ class RuntimeConfig:
 
     @property
     def traces_dir(self) -> Path:
-        return (self.run_dir or (self.root / ".companyos" / "runs")).resolve()
+        return (self.run_dir or (self.root / ".ai-native-os" / "runs")).resolve()
 
     def with_provider(self, **kw) -> "RuntimeConfig":
         return replace(self, provider=replace(self.provider, **kw))
@@ -188,7 +188,7 @@ class RuntimeConfig:
         resolved_root = Path(root).resolve() if root else find_repo_root()
         data: dict = {}
 
-        path = Path(config_file) if config_file else resolved_root / "companyos.json"
+        path = Path(config_file) if config_file else resolved_root / "ai-native-os.json"
         if path.is_file():
             try:
                 data = json.loads(path.read_text(encoding="utf-8"))

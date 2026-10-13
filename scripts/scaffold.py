@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scaffold a new department or agent from the Company OS templates.
+"""Scaffold a new department or agent from the AI-Native OS templates.
 
 Usage:
     python scripts/scaffold.py department <name>

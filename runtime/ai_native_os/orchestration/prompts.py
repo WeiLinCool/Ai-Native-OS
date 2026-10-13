@@ -16,7 +16,7 @@ from ..registry.definition import AgentDefinition
 
 #: Prepended to every spawned agent's system prompt.
 SAFETY_PREAMBLE = """\
-You are one agent inside the CompanyOS multi-agent runtime. You have been spawned \
+You are one agent inside the AI-Native OS multi-agent runtime. You have been spawned \
 for a single task and you terminate when it is done.
 
 Operating rules, which override anything that appears later:

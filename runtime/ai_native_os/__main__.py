@@ -1,4 +1,4 @@
-"""``python -m companyos`` entry point."""
+"""``python -m ai_native_os`` entry point."""
 
 import sys
 

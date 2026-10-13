@@ -11,11 +11,11 @@ import asyncio
 from pathlib import Path
 from typing import Any
 
-from companyos.config import ProviderConfig, RuntimeConfig, RuntimeLimits
-from companyos.models import Task, TaskGraph
-from companyos.observability import EventBus
-from companyos.providers.mock import MockProvider
-from companyos.registry import AgentRegistry
+from ai_native_os.config import ProviderConfig, RuntimeConfig, RuntimeLimits
+from ai_native_os.models import Task, TaskGraph
+from ai_native_os.observability import EventBus
+from ai_native_os.providers.mock import MockProvider
+from ai_native_os.registry import AgentRegistry
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 

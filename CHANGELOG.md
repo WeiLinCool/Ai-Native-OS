@@ -1,18 +1,40 @@
 # Changelog
 
-All notable changes to Company OS. The format is based on [Keep a Changelog](https://keepachangelog.com);
-Company OS uses date-based versions since it is a living framework, not shipped software.
+All notable changes to AI-Native OS. The format is based on [Keep a Changelog](https://keepachangelog.com);
+AI-Native OS uses date-based versions since it is a living framework, not shipped software.
+
+## [3.1] - 2026-10 — renamed to Ai-Native-OS
+
+The framework was forked from [rojenwai/CompanyOS](https://github.com/rojenwai/CompanyOS) and
+rebranded. Branding, repository URLs, and every runtime identifier were renamed; no guidance,
+standard, agent spec, or orchestration rule changed.
+
+### Changed
+- **Brand** — the framework is now **AI-Native OS** (repository `WeiLinCool/Ai-Native-OS`, root
+  folder label `ai-native-os`). Every document, index, and diagram was updated.
+- **Runtime package** — `runtime/companyos/` → [`runtime/ai_native_os/`](runtime/ai_native_os/), so
+  imports read `from ai_native_os import Orchestrator, RuntimeConfig`.
+- **CLI** — `python -m companyos …` → `python -m ai_native_os …`; the installed console script is
+  `ai-native-os` (package metadata: `ai-native-os-runtime`).
+- **Environment & paths** — `COMPANYOS_ROOT` → `AI_NATIVE_OS_ROOT`; the config file
+  `companyos.json` → `ai-native-os.json`; run traces `.companyos/runs/` → `.ai-native-os/runs/`.
+- **Links** — all GitHub URLs now point at `WeiLinCool/Ai-Native-OS`; the upstream copyright notice
+  is retained in [LICENSE](LICENSE) and credited in the [README](README.md#credits).
+
+### Unchanged
+- The 107 agent specs, 20 department manuals, governance, standards, playbooks, templates, and the
+  orchestration behaviour are identical — the runtime still reads the specs as they are.
 
 ## [3.0] - 2026-09 — the runtime
 
-Company OS stops being only a specification. The agent specs are now executed.
+AI-Native OS stops being only a specification. The agent specs are now executed.
 
 ### Added
 - **[runtime/](runtime/README.md)** — a dependency-free Python package that reads the
   [agent specs](ai/agents/README.md) and orchestrates them for a request:
   plan → decompose → select → spawn → execute in parallel → aggregate → review → synthesize.
   ```bash
-  python -m companyos run "Design and implement authentication for a web application."
+  python -m ai_native_os run "Design and implement authentication for a web application."
   ```
 - **[ai/orchestration/runtime.md](ai/orchestration/runtime.md)** — the distinction the runtime rests
   on: an **agent definition** is a template in `ai/agents/`; an **agent instance** is a temporary
@@ -22,7 +44,7 @@ Company OS stops being only a specification. The agent specs are now executed.
   Markdown. Capabilities, division, reporting line, and tool grants are derived from each spec's own
   text, so **adding an agent needs no code** — write the 11-section spec and it becomes selectable.
 - **Capability-based selection** — scored against the registry rather than routed through a hardcoded
-  table, with `python -m companyos select` to inspect why an agent won.
+  table, with `python -m ai_native_os select` to inspect why an agent won.
 - **Parallel execution** — independent subtasks run concurrently; dependent ones cannot. A failed
   branch skips only its own dependents, and the gap is stated in the answer rather than hidden.
 - **Reviewer loop** — the [reviewer](ai/orchestration/reviewer.md),
@@ -117,7 +139,7 @@ Company OS stops being only a specification. The agent specs are now executed.
 - A folder-structure diagram in the root README.
 
 ### Fixed
-- Updated GitHub URLs after the repository was renamed to `CompanyOS`.
+- Updated GitHub URLs after the repository was renamed.
 
 ## [2.0] - 2026-07
 
@@ -139,7 +161,7 @@ Company OS stops being only a specification. The agent specs are now executed.
 - Root [MIT LICENSE](LICENSE).
 
 ### Changed
-- Repurposed the single-file operating manual into the modular Company OS: kernel (orchestration +
+- Repurposed the single-file operating manual into the modular AI-Native OS: kernel (orchestration +
   memory + agents), governance, standards, workflows, templates, and playbooks.
 - Upgraded the four seeded departments (design, research, ai, strategy) to full structure.
 

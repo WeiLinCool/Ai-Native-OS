@@ -1,6 +1,6 @@
 # Memory
 
-Memory is the persistent, structured knowledge that lets Company OS improve over time instead of
+Memory is the persistent, structured knowledge that lets AI-Native OS improve over time instead of
 relearning everything each session. The [Memory Manager](../orchestration/memory-manager.md) and
 [Knowledge Manager](../orchestration/knowledge-manager.md) own reads and writes; memory is **never
 modified without validation**.

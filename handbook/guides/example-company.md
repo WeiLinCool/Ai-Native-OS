@@ -1,6 +1,6 @@
 # Worked Example: One Company, End to End
 
-> An illustrative walkthrough of a fictional company built on Company OS - to show how the pieces connect.
+> An illustrative walkthrough of a fictional company built on AI-Native OS - to show how the pieces connect.
 > It is a narrative, not a live record. The company: **PostmortemAI**, an [AI startup](../../starter-kits/ai-startup/README.md)
 > that auto-writes incident postmortems for SaaS engineering teams.
 

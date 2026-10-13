@@ -1,6 +1,6 @@
 name: Docs check
 
-# Validates the integrity of the Company OS documentation on every push and PR.
+# Validates the integrity of the AI-Native OS documentation on every push and PR.
 on:
   push:
     branches: [main]
@@ -47,5 +47,5 @@ jobs:
         run: python runtime/run_tests.py
 
       - name: Verify the runtime can discover the agent specs
-        run: python -m companyos doctor
+        run: python -m ai_native_os doctor
         working-directory: runtime

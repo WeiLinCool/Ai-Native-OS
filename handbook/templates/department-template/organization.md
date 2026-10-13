@@ -1,7 +1,7 @@
 # Organization
 
 > How this department is structured, who reports to whom, and how it interfaces with the rest of
-> Company OS.
+> AI-Native OS.
 
 ## Structure
 

@@ -1,6 +1,6 @@
 # AI Startup — Getting Started
 
-A short path to stand up an AI startup on Company OS.
+A short path to stand up an AI startup on AI-Native OS.
 
 ## 1. Adopt the core
 Read the [company identity](../../handbook/company/README.md), [governance](../../handbook/governance/README.md), and the
@@ -28,4 +28,4 @@ Use core [release management](../../handbook/departments/post-launch/release-man
 cost ([dashboards](../../handbook/departments/post-launch/dashboards.md)). Iterate via the
 [continuous improvement loop](../../handbook/departments/post-launch/continuous-improvement.md).
 
-> Everything not listed here comes from core Company OS — this kit only adds the AI-specific deltas.
+> Everything not listed here comes from the AI-Native OS core — this kit only adds the AI-specific deltas.

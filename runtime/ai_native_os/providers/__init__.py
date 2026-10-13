@@ -151,12 +151,12 @@ def estimate_tokens(text: str) -> int:
 # --- registry -----------------------------------------------------------------
 
 _BUILTIN: dict[str, str] = {
-    "mock": "companyos.providers.mock:MockProvider",
-    "anthropic": "companyos.providers.anthropic:AnthropicProvider",
-    "openai": "companyos.providers.openai:OpenAIProvider",
+    "mock": "ai_native_os.providers.mock:MockProvider",
+    "anthropic": "ai_native_os.providers.anthropic:AnthropicProvider",
+    "openai": "ai_native_os.providers.openai:OpenAIProvider",
     # OpenAI-compatible servers (Ollama, vLLM, LM Studio, OpenRouter) need only
     # a base_url, so they reuse the same client.
-    "local": "companyos.providers.openai:OpenAIProvider",
+    "local": "ai_native_os.providers.openai:OpenAIProvider",
 }
 
 _CUSTOM: dict[str, Callable[[ProviderConfig], Provider]] = {}

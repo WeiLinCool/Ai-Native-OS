@@ -4,10 +4,10 @@ from __future__ import annotations
 
 import unittest
 
-from companyos.memory import FileMemoryStore
-from companyos.models import AgentResult, Task, TaskGraph
-from companyos.orchestration.context import ContextBuilder
-from companyos.status import TaskStatus
+from ai_native_os.memory import FileMemoryStore
+from ai_native_os.models import AgentResult, Task, TaskGraph
+from ai_native_os.orchestration.context import ContextBuilder
+from ai_native_os.status import TaskStatus
 
 from . import support
 

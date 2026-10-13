@@ -7,4 +7,4 @@
 5. Enforce mobile performance budgets ([engineering standards](../../handbook/departments/engineering/performance-standards.md)).
 6. Monetize without harming retention; iterate on cohorts.
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

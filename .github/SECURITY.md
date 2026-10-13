@@ -1,6 +1,6 @@
 # Security Policy
 
-Company OS is a documentation framework, so most "security" concerns are about the guidance it gives.
+AI-Native OS is a documentation framework, so most "security" concerns are about the guidance it gives.
 We still take reports seriously.
 
 ## Reporting a vulnerability
@@ -10,7 +10,7 @@ workflow) **or** unsafe advice in the guidance (e.g. a standard or playbook that
 an insecure practice):
 
 1. **Do not open a public issue** for anything sensitive.
-2. Use GitHub's **[private vulnerability reporting](https://github.com/rojenwai/CompanyOS/security/advisories/new)**
+2. Use GitHub's **[private vulnerability reporting](https://github.com/WeiLinCool/Ai-Native-OS/security/advisories/new)**
    (Security → Advisories → Report a vulnerability), or contact the maintainer privately.
 3. Include: what you found, where (file/path), and the potential impact.
 
@@ -28,7 +28,7 @@ an insecure practice):
   own [security standards](../handbook/departments/engineering/security-standards.md) and
   [incident response](../handbook/departments/post-launch/incident-response.md) for those.
 
-## For companies built on Company OS
+## For companies built on AI-Native OS
 
 Your product's security is governed by the framework itself:
 [engineering/security-standards.md](../handbook/departments/engineering/security-standards.md),

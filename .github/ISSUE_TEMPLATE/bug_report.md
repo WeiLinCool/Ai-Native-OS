@@ -1,6 +1,6 @@
 ---
 name: Bug / correction
-about: Report an error, broken link, or inconsistency in Company OS
+about: Report an error, broken link, or inconsistency in AI-Native OS
 title: "[fix] "
 labels: ["fix"]
 ---

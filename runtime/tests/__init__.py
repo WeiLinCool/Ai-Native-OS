@@ -1,1 +1,1 @@
-"""CompanyOS runtime test suite (stdlib unittest; no external dependencies)."""
+"""AI-Native OS runtime test suite (stdlib unittest; no external dependencies)."""

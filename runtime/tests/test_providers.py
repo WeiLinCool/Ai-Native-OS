@@ -9,17 +9,17 @@ from __future__ import annotations
 import os
 import unittest
 
-from companyos.config import ProviderConfig
-from companyos.errors import ProviderError, ProviderUnavailableError
-from companyos.providers import (
+from ai_native_os.config import ProviderConfig
+from ai_native_os.errors import ProviderError, ProviderUnavailableError
+from ai_native_os.providers import (
     Message,
     available_providers,
     extract_json,
     register_provider,
     resolve_provider,
 )
-from companyos.providers.anthropic import AnthropicProvider
-from companyos.providers.openai import OpenAIProvider
+from ai_native_os.providers.anthropic import AnthropicProvider
+from ai_native_os.providers.openai import OpenAIProvider
 
 from . import support
 
@@ -48,7 +48,7 @@ class ResolutionTest(unittest.TestCase):
             self.assertIn("fake", available_providers())
             self.assertEqual(resolve_provider(ProviderConfig(name="fake")).name, "mock")
         finally:
-            from companyos.providers import _CUSTOM
+            from ai_native_os.providers import _CUSTOM
 
             _CUSTOM.pop("fake", None)
 

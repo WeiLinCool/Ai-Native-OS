@@ -1,6 +1,6 @@
 # Templates
 
-Reusable scaffolds used across Company OS.
+Reusable scaffolds used across AI-Native OS.
 
 | Template | Purpose |
 |---|---|

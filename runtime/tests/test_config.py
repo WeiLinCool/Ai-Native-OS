@@ -8,8 +8,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from companyos.config import Budget, RuntimeConfig, RuntimeLimits, find_repo_root
-from companyos.errors import ConfigError, LimitExceeded
+from ai_native_os.config import Budget, RuntimeConfig, RuntimeLimits, find_repo_root
+from ai_native_os.errors import ConfigError, LimitExceeded
 
 from . import support
 
@@ -20,24 +20,24 @@ class RootDiscoveryTest(unittest.TestCase):
         self.assertEqual(found, support.REPO_ROOT)
 
     def test_env_var_overrides_the_search(self) -> None:
-        previous = os.environ.get("COMPANYOS_ROOT")
-        os.environ["COMPANYOS_ROOT"] = str(support.REPO_ROOT)
+        previous = os.environ.get("AI_NATIVE_OS_ROOT")
+        os.environ["AI_NATIVE_OS_ROOT"] = str(support.REPO_ROOT)
         try:
             self.assertEqual(find_repo_root(Path(tempfile.gettempdir())), support.REPO_ROOT)
         finally:
-            os.environ.pop("COMPANYOS_ROOT", None)
+            os.environ.pop("AI_NATIVE_OS_ROOT", None)
             if previous is not None:
-                os.environ["COMPANYOS_ROOT"] = previous
+                os.environ["AI_NATIVE_OS_ROOT"] = previous
 
     def test_a_directory_without_specs_is_rejected(self) -> None:
-        previous = os.environ.pop("COMPANYOS_ROOT", None)
+        previous = os.environ.pop("AI_NATIVE_OS_ROOT", None)
         try:
             with tempfile.TemporaryDirectory() as tmp:
                 with self.assertRaises(ConfigError):
                     find_repo_root(Path(tmp))
         finally:
             if previous is not None:
-                os.environ["COMPANYOS_ROOT"] = previous
+                os.environ["AI_NATIVE_OS_ROOT"] = previous
 
 
 class LimitsTest(unittest.TestCase):
@@ -93,7 +93,7 @@ class BudgetTest(unittest.TestCase):
 class ConfigFileTest(unittest.TestCase):
     def test_json_file_overrides_defaults(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
-            path = Path(tmp) / "companyos.json"
+            path = Path(tmp) / "ai-native-os.json"
             path.write_text(
                 json.dumps(
                     {
@@ -112,7 +112,7 @@ class ConfigFileTest(unittest.TestCase):
 
     def test_invalid_json_is_reported_clearly(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
-            path = Path(tmp) / "companyos.json"
+            path = Path(tmp) / "ai-native-os.json"
             path.write_text("{not json", encoding="utf-8")
             with self.assertRaises(ConfigError):
                 RuntimeConfig.load(root=support.REPO_ROOT, config_file=path)

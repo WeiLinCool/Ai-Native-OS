@@ -1,6 +1,6 @@
-# Company OS — Structure & Authoring Conventions
+# Ai-Native-OS — Structure & Authoring Conventions
 
-This document defines how Company OS is organized and how every file in it is written. It is the
+This document defines how AI-Native OS is organized and how every file in it is written. It is the
 contract that makes the system predictable: once you know the pattern, you can navigate or extend
 any part of the repository.
 
@@ -12,7 +12,7 @@ The repository is split into **two sides**: what humans read (`handbook/`) and w
 runs on (`ai/`). This boundary is what makes the system easy to customize — see [CUSTOMIZE.md](CUSTOMIZE.md).
 
 ```
-company-os (repository root)
+ai-native-os (repository root)
 │
 ├── handbook/            ◀── THE READING SIDE (humans)
 │   ├── company/             Identity: mission, vision, principles, structure, roles
@@ -37,15 +37,15 @@ company-os (repository root)
 │   └── memory/              Memory architecture: types, retrieval, retention, versioning
 │
 ├── runtime/             ◀── THE KERNEL, EXECUTABLE (Python, no dependencies)
-│   ├── companyos/           Registry, planner, decomposer, selector, spawner, scheduler,
+│   ├── ai_native_os/        Registry, planner, decomposer, selector, spawner, scheduler,
 │   │                        reviewer, synthesizer, agent map, providers, tools, memory
 │   └── tests/               Test suite (stdlib unittest; mocked providers, no API calls)
 │
-├── starter-kits/        Preconfigured company types that inherit core Company OS
+├── starter-kits/        Preconfigured company types that inherit the AI-Native OS core
 ├── scripts/             Repo tooling (link + structure checkers, run in CI)
 ├── .github/             Community health files + CI workflows
 │
-├── README.md            The Company OS hub
+├── README.md            The AI-Native OS hub
 ├── CUSTOMIZE.md         How to make this repo your own
 ├── STRUCTURE.md         This file
 ├── CONTRIBUTING.md      Authoring conventions
@@ -54,7 +54,7 @@ company-os (repository root)
 └── ROADMAP.md           What's built and what's next
 ```
 
-The repository root **is** Company OS — there is no redundant `company-os/` nesting.
+The repository root **is** AI-Native OS — there is no redundant `ai-native-os/` nesting.
 
 **Naming note:** `ai/` is the AI *workforce* (agents, orchestration, memory). The *discipline* of
 building AI products is a department: `handbook/departments/ai-engineering/`.

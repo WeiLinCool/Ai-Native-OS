@@ -1,10 +1,10 @@
-# Company OS — Glossary
+# Ai-Native-OS — Glossary
 
 Shared vocabulary for the whole repository. Use these terms consistently.
 
 | Term | Definition |
 |---|---|
-| **Company OS** | This repository: the operating system for an AI-native company. |
+| **AI-Native OS** | This repository: the operating system for an AI-native company. |
 | **Department** | A self-contained functional area (engineering, product, finance…) that follows the [standard department structure](STRUCTURE.md#standard-department-structure). |
 | **Kernel** | The core coordination layer: [orchestration](ai/orchestration/), [memory](ai/memory/), and [agents](ai/agents/). Everything else plugs into it. |
 | **Agent** | A specialized AI worker defined by the [standard agent spec](ai/agents/agent-template.md). Agents never work alone on major decisions. |
@@ -21,7 +21,7 @@ Shared vocabulary for the whole repository. Use these terms consistently.
 | **PRD** | Product Requirements Document. |
 | **RFC** | Request for Comments — a proposal document for a significant change. |
 | **ADR** | Architecture Decision Record — a captured, dated architectural decision. |
-| **Starter Kit** | A preconfigured company type that inherits core Company OS and adds domain-specific practice. |
+| **Starter Kit** | A preconfigured company type that inherits the AI-Native OS core and adds domain-specific practice. |
 | **Seeded** | A department populated with real migrated content but not yet expanded to the full structure. |
 | **North Star Metric** | The single metric that best captures the value a product delivers to customers. |
 | **PMF** | Product-Market Fit. |

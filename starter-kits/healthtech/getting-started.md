@@ -7,4 +7,4 @@
 5. Build under a quality system with continuous regulatory documentation.
 6. Launch with post-market surveillance and adverse-event reporting in place.
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

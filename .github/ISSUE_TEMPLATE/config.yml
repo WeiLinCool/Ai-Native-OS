@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: Question or help
-    url: https://github.com/rojenwai/CompanyOS/discussions
-    about: Ask a question or get help using Company OS (see SUPPORT.md).
+    url: https://github.com/WeiLinCool/Ai-Native-OS/discussions
+    about: Ask a question or get help using AI-Native OS (see SUPPORT.md).
   - name: Roadmap
-    url: https://github.com/rojenwai/CompanyOS/blob/main/ROADMAP.md
+    url: https://github.com/WeiLinCool/Ai-Native-OS/blob/main/ROADMAP.md
     about: See what's already planned before proposing something new.

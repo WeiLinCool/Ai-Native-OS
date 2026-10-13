@@ -1,6 +1,6 @@
 # Governance
 
-How decisions get made, communicated, reviewed, and approved across Company OS. Governance turns the
+How decisions get made, communicated, reviewed, and approved across AI-Native OS. Governance turns the
 company [principles](../company/principles.md) into enforceable practice.
 
 ## Index

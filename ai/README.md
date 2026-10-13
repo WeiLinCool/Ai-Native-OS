@@ -36,7 +36,7 @@ the result. See [orchestration/runtime.md](orchestration/runtime.md) for the def
 distinction it rests on.
 
 ```bash
-python -m companyos run "Design and implement authentication for a web application."
+python -m ai_native_os run "Design and implement authentication for a web application."
 ```
 
 ## Customizing

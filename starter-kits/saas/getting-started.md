@@ -7,4 +7,4 @@
 5. Ship the MVP ([build-an-MVP playbook](../../handbook/playbooks/building-an-mvp.md)); publish an SLA.
 6. Run the retention loop ([continuous improvement](../../handbook/departments/post-launch/continuous-improvement.md)).
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

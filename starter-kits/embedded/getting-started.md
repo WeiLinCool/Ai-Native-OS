@@ -7,4 +7,4 @@
 5. Pilot, then move to production with monitoring.
 6. Maintain firmware via [post-launch](../../handbook/departments/post-launch/maintenance.md).
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

@@ -6,10 +6,10 @@ import asyncio
 import time
 import unittest
 
-from companyos.ids import now
-from companyos.models import AgentResult, Task, TaskGraph
-from companyos.orchestration.scheduler import DAGScheduler
-from companyos.status import TaskStatus
+from ai_native_os.ids import now
+from ai_native_os.models import AgentResult, Task, TaskGraph
+from ai_native_os.orchestration.scheduler import DAGScheduler
+from ai_native_os.status import TaskStatus
 
 from . import support
 

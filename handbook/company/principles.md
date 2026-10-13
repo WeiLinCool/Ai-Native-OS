@@ -1,6 +1,6 @@
 # Core Principles
 
-Seven principles govern every decision in Company OS. They are inherited and specialized by every
+Seven principles govern every decision in AI-Native OS. They are inherited and specialized by every
 [department](../../STRUCTURE.md#standard-department-structure).
 
 ---

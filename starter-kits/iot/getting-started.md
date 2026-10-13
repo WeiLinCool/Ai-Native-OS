@@ -7,4 +7,4 @@
 5. Stand up fleet infrastructure ([devops](../../handbook/departments/devops/README.md)).
 6. Operate and monitor the fleet via [post-launch](../../handbook/departments/post-launch/README.md).
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

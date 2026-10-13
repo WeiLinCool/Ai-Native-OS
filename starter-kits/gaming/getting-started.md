@@ -7,4 +7,4 @@
 5. Soft launch, measure D1/D7/D30, and iterate on the loop - not just content.
 6. Run live-ops with a committed cadence and ethical monetization.
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

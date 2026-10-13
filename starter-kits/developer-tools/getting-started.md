@@ -7,4 +7,4 @@
 5. Build community feedback loops into [product feature requests](../../handbook/departments/post-launch/feature-requests.md).
 6. Commit to versioning and deprecation discipline from v1.
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

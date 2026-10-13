@@ -1,6 +1,6 @@
 # Goals & OKRs
 
-How Company OS connects the [company mission](../company/mission.md) to what each department measures, so
+How AI-Native OS connects the [company mission](../company/mission.md) to what each department measures, so
 everyone is pulling in the same direction. Lightweight by design: Objectives and Key Results, scored
 quarterly, every KR backed by a real metric.
 

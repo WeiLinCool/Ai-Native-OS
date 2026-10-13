@@ -7,4 +7,4 @@
 5. Pass a full [security review](../../handbook/templates/documents/security-review.md) and compliance audit.
 6. Launch narrowly; reconcile daily and monitor fraud ([post-launch](../../handbook/departments/post-launch/README.md)).
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

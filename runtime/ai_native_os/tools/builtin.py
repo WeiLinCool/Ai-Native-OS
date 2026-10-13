@@ -155,7 +155,7 @@ BUILTIN_TOOLS: tuple[Tool, ...] = (
     Tool(
         name="read_spec",
         description=(
-            "Read one Markdown document from the CompanyOS repository "
+            "Read one Markdown document from the AI-Native OS repository "
             "(handbook, ai, or starter-kits). Relative paths only."
         ),
         parameters={
@@ -172,7 +172,7 @@ BUILTIN_TOOLS: tuple[Tool, ...] = (
     ),
     Tool(
         name="search_specs",
-        description="Full-text search across the CompanyOS documentation.",
+        description="Full-text search across the AI-Native OS documentation.",
         parameters={
             "type": "object",
             "properties": {

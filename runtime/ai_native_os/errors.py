@@ -1,4 +1,4 @@
-"""Exception hierarchy for the CompanyOS runtime.
+"""Exception hierarchy for the AI-Native OS runtime.
 
 Every failure a run can hit is one of these, so the orchestrator can decide
 between "degrade and keep going" and "stop the run" without string matching.
@@ -7,18 +7,18 @@ between "degrade and keep going" and "stop the run" without string matching.
 from __future__ import annotations
 
 
-class CompanyOSError(Exception):
+class AINativeOSError(Exception):
     """Base class for every runtime error."""
 
 
 # --- configuration / registry -------------------------------------------------
 
 
-class ConfigError(CompanyOSError):
+class ConfigError(AINativeOSError):
     """The runtime was configured with something it cannot use."""
 
 
-class RegistryError(CompanyOSError):
+class RegistryError(AINativeOSError):
     """Agent definitions could not be discovered or parsed."""
 
 
@@ -33,7 +33,7 @@ class NoSuitableAgentError(RegistryError):
 # --- task graph ---------------------------------------------------------------
 
 
-class GraphError(CompanyOSError):
+class GraphError(AINativeOSError):
     """The task graph is malformed."""
 
 
@@ -48,7 +48,7 @@ class MalformedTaskError(GraphError):
 # --- execution ----------------------------------------------------------------
 
 
-class ExecutionError(CompanyOSError):
+class ExecutionError(AINativeOSError):
     """An agent instance failed to produce a usable result."""
 
 
@@ -67,7 +67,7 @@ class InvalidOutputError(ExecutionError):
 # --- providers ----------------------------------------------------------------
 
 
-class ProviderError(CompanyOSError):
+class ProviderError(AINativeOSError):
     """The LLM provider failed."""
 
 
@@ -78,7 +78,7 @@ class ProviderUnavailableError(ProviderError):
 # --- tools / policy -----------------------------------------------------------
 
 
-class ToolError(CompanyOSError):
+class ToolError(AINativeOSError):
     """A tool call failed."""
 
 
@@ -93,7 +93,7 @@ class ToolSandboxError(ToolError):
 # --- budget / safety ----------------------------------------------------------
 
 
-class LimitExceeded(CompanyOSError):
+class LimitExceeded(AINativeOSError):
     """A runtime safeguard tripped. Carries the limit that was hit."""
 
     def __init__(self, limit: str, value: object, cap: object) -> None:
@@ -103,5 +103,5 @@ class LimitExceeded(CompanyOSError):
         self.cap = cap
 
 
-class RunCancelled(CompanyOSError):
+class RunCancelled(AINativeOSError):
     """The run was cancelled by its caller."""

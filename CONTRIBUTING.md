@@ -1,6 +1,6 @@
-# Contributing to Company OS
+# Contributing to Ai-Native-OS
 
-Company OS is built **incrementally** and to **production quality**. This guide explains how to add
+AI-Native OS is built **incrementally** and to **production quality**. This guide explains how to add
 or extend content so the system stays consistent.
 
 ---
@@ -31,7 +31,7 @@ or extend content so the system stays consistent.
 ## Adding a starter kit
 
 1. Create `starter-kits/<company-type>/`.
-2. Write a `README.md` that explains what it **inherits** from core Company OS and what it **overrides or adds**.
+2. Write a `README.md` that explains what it **inherits** from the AI-Native OS core and what it **overrides or adds**.
 3. Only include the domain-specific deltas — do not duplicate core content; link to it.
 
 ---

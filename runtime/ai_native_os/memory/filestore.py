@@ -1,6 +1,6 @@
 """File-backed memory over the existing ``ai/memory/`` documents.
 
-CompanyOS already defines 14 memory types as Markdown. This store indexes them
+AI-Native OS already defines 14 memory types as Markdown. This store indexes them
 as they are -- it does not restructure or duplicate them -- so retrieval works
 against the organization's real written memory on a fresh clone.
 

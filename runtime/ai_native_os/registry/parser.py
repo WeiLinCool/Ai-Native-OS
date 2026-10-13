@@ -1,4 +1,4 @@
-"""Parse a CompanyOS Markdown agent spec into an :class:`AgentDefinition`.
+"""Parse an AI-Native OS Markdown agent spec into an :class:`AgentDefinition`.
 
 The specs are the source of truth. This module reads them; it never writes
 them, and it tolerates the two header dialects that exist in the repository:

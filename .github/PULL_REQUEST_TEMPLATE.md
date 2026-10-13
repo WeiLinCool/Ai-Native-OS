@@ -1,4 +1,4 @@
-<!-- Thanks for contributing to Company OS. Keep changes focused and follow CONTRIBUTING.md. -->
+<!-- Thanks for contributing to AI-Native OS. Keep changes focused and follow CONTRIBUTING.md. -->
 
 ## Summary
 

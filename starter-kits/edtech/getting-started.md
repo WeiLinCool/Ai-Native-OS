@@ -7,4 +7,4 @@
 5. Pilot in real classrooms; run an efficacy study against a baseline.
 6. Sell to institutions on evidence, then support rollout with [customer-success](../../handbook/departments/customer-success/README.md).
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

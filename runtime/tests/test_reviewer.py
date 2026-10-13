@@ -5,12 +5,12 @@ from __future__ import annotations
 import json
 import unittest
 
-from companyos import purposes
-from companyos.models import AgentResult, ReviewFinding, ReviewReport, Task, TaskGraph, Usage
-from companyos.orchestration.aggregator import ResultAggregator
-from companyos.orchestration.reviewer import ReviewCoordinator
-from companyos.orchestration.selector import AgentSelector
-from companyos.status import TaskStatus, Verdict
+from ai_native_os import purposes
+from ai_native_os.models import AgentResult, ReviewFinding, ReviewReport, Task, TaskGraph, Usage
+from ai_native_os.orchestration.aggregator import ResultAggregator
+from ai_native_os.orchestration.reviewer import ReviewCoordinator
+from ai_native_os.orchestration.selector import AgentSelector
+from ai_native_os.status import TaskStatus, Verdict
 
 from . import support
 

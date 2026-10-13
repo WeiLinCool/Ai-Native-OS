@@ -5,8 +5,8 @@ from __future__ import annotations
 import json
 import unittest
 
-from companyos import purposes
-from companyos.orchestration import Orchestrator, build_agent_map, render_tree
+from ai_native_os import purposes
+from ai_native_os.orchestration import Orchestrator, build_agent_map, render_tree
 
 from . import support
 

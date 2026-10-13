@@ -7,4 +7,4 @@
 5. Design enterprise features: SSO, RBAC, audit logs, data residency.
 6. Run enterprise [customer-success](../../handbook/departments/customer-success/README.md) with QBRs and renewals.
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

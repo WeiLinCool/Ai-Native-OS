@@ -1,4 +1,4 @@
-"""CompanyOS runtime: dynamic multi-agent orchestration over the Markdown agent specs.
+"""AI-Native OS runtime: dynamic multi-agent orchestration over the Markdown agent specs.
 
 The 107 specs in ``ai/agents/`` are *agent definitions* -- templates. This
 package selects the ones a task needs, spawns temporary instances of them, runs
@@ -6,7 +6,7 @@ independent work in parallel, reviews the results, and synthesizes an answer.
 
 Quick start::
 
-    from companyos import Orchestrator, RuntimeConfig
+    from ai_native_os import Orchestrator, RuntimeConfig
 
     config = RuntimeConfig.load()                       # finds the repo root
     run = Orchestrator(config).run_sync("Design and implement authentication.")

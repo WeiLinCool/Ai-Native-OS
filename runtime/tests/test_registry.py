@@ -6,9 +6,9 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from companyos.errors import AgentNotFoundError, RegistryError
-from companyos.registry import AgentRegistry, parse_agent_spec
-from companyos.registry.definition import AgentKind
+from ai_native_os.errors import AgentNotFoundError, RegistryError
+from ai_native_os.registry import AgentRegistry, parse_agent_spec
+from ai_native_os.registry.definition import AgentKind
 
 from . import support
 

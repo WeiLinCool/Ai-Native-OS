@@ -35,7 +35,7 @@ TRL 7-9  DEPLOYMENT    operational -> production        (owned by engineering/, 
 product investment, and most deep tech dies there for lack of focus or funding. Plan and fund the crossing
 **deliberately** - it is a strategic decision, not an afterthought ([strategy](../strategy/README.md)).
 
-## How Company OS uses TRL
+## How AI-Native OS uses TRL
 
 - **Assess honestly.** Research assigns a TRL to any novel technology and never inflates it - a TRL-3
   result described as "nearly a product" is a lie that wastes money later.

@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from companyos.memory import FileMemoryStore, MemoryProposal, NullMemoryStore, RunScratchpad
+from ai_native_os.memory import FileMemoryStore, MemoryProposal, NullMemoryStore, RunScratchpad
 
 from . import support
 

@@ -2,7 +2,7 @@
 
 Everything here is default-deny. A tool must be (a) implemented, (b) allowed by
 runtime policy, and (c) implied by the agent's own spec before an instance can
-call it. See :mod:`companyos.tools.policy`.
+call it. See :mod:`ai_native_os.tools.policy`.
 """
 
 from __future__ import annotations

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify Company OS authoring conventions (see CONTRIBUTING.md and STRUCTURE.md).
+"""Verify AI-Native OS authoring conventions (see CONTRIBUTING.md and STRUCTURE.md).
 
 Enforces the rules that keep the repository navigable and free of filler:
   1. Every content directory self-indexes with a README.md.

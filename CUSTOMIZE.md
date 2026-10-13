@@ -1,6 +1,6 @@
-# Customize Company OS
+# Customize Ai-Native-OS
 
-Company OS ships as a complete, working system. Making it *yours* is mostly **deleting what you don't
+AI-Native OS ships as a complete, working system. Making it *yours* is mostly **deleting what you don't
 need** and **filling in who you are**. This page tells you exactly what to touch, in what order.
 
 ## The two sides

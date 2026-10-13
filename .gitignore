@@ -33,5 +33,5 @@ venv/
 .pytest_cache/
 
 # Runtime traces and run records
-.companyos/
-companyos.json
+.ai-native-os/
+ai-native-os.json

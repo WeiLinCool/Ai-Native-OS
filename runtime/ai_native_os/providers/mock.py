@@ -5,7 +5,7 @@ Two jobs:
 1. **Tests.** Script exact responses per orchestration step and assert on the
    prompts the runtime actually sent (``provider.calls``). No network, no keys.
 2. **Offline demo.** With no script, a small rule-based brain answers each step
-   plausibly, so ``companyos run --provider mock`` exercises the *real*
+   plausibly, so ``ai-native-os run --provider mock`` exercises the *real*
    orchestration path -- real registry, real selection, real DAG scheduling,
    real reviewer loop -- with a fake model behind it.
 

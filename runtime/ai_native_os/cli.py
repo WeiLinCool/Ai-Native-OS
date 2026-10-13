@@ -1,12 +1,12 @@
 """Command line interface.
 
-The runtime is fully usable from here and from :class:`companyos.Orchestrator`;
+The runtime is fully usable from here and from :class:`ai_native_os.Orchestrator`;
 no UI is required, and none of the orchestration logic lives in this module.
 
-    companyos run "Design and implement authentication for a web application."
-    companyos agents list --division security
-    companyos select "threat model the login flow" -c security.threat-modeling
-    companyos map .companyos/runs/run_ab12cd34.json
+    ai-native-os run "Design and implement authentication for a web application."
+    ai-native-os agents list --division security
+    ai-native-os select "threat model the login flow" -c security.threat-modeling
+    ai-native-os map .ai-native-os/runs/run_ab12cd34.json
 """
 
 from __future__ import annotations
@@ -20,7 +20,7 @@ from typing import Sequence
 
 from . import __version__
 from .config import ProviderConfig, RuntimeConfig, RuntimeLimits, find_repo_root
-from .errors import CompanyOSError
+from .errors import AINativeOSError
 from .observability import ConsoleSink, EventBus
 from .orchestration import Orchestrator, render_tree
 from .orchestration.selector import AgentSelector
@@ -32,11 +32,11 @@ from .registry import AgentRegistry, known_capabilities
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="companyos",
-        description="Dynamic multi-agent orchestration over the CompanyOS agent specs.",
+        prog="ai-native-os",
+        description="Dynamic multi-agent orchestration over the AI-Native OS agent specs.",
     )
-    parser.add_argument("--version", action="version", version=f"companyos {__version__}")
-    parser.add_argument("--root", help="CompanyOS repository root (default: auto-detect)")
+    parser.add_argument("--version", action="version", version=f"ai-native-os {__version__}")
+    parser.add_argument("--root", help="AI-Native OS repository root (default: auto-detect)")
     sub = parser.add_subparsers(dest="command", required=True)
 
     run = sub.add_parser("run", help="orchestrate a request end to end")
@@ -113,7 +113,7 @@ def cmd_run(args: argparse.Namespace) -> int:
     bus = EventBus([ConsoleSink(verbose=args.verbose)])
     orchestrator = Orchestrator(config, bus=bus, trace_to_disk=not args.no_trace)
 
-    print(f"CompanyOS runtime | {len(orchestrator.registry)} agent definitions | "
+    print(f"AI-Native OS runtime | {len(orchestrator.registry)} agent definitions | "
           f"provider {orchestrator.provider.name}/{orchestrator.provider.model}",
           file=sys.stderr)
     print(file=sys.stderr)
@@ -278,7 +278,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     }
     try:
         return handlers[args.command](args)
-    except CompanyOSError as exc:
+    except AINativeOSError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
     except KeyboardInterrupt:  # pragma: no cover

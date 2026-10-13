@@ -1,7 +1,7 @@
 # The Company-Building Guide
 
 > The single front-to-back guide to **what you need to learn** and **what you actually do** to build
-> and run a company on [Company OS](../../README.md). Every step links to the part of the OS that does the
+> and run a company on [AI-Native OS](../../README.md). Every step links to the part of the OS that does the
 > work — so this guide is both a syllabus and a map.
 
 **You do not have to master everything.** A founder needs *working literacy* across all functions and
@@ -145,7 +145,7 @@ The end-to-end journey from an idea to a scaling business. Each step names the *
 ### Step 5 — Handle the legal foundation
 **Outcome:** a real company you can operate safely. **Do:** incorporate; found­ers' agreements & equity; IP assignment; bank account; basic contracts, privacy policy & terms (Chief Legal Officer scope → [company/roles.md](../company/roles.md)). **Gate:** legally able to hire, sell, and raise.
 
-### Step 6 — Stand up Company OS & the team
+### Step 6 — Stand up AI-Native OS & the team
 **Outcome:** an operating system and the people/agents to run it. **Do:** adopt [company](../company/README.md) + [governance](../governance/README.md) + the [kernel](../../ai/orchestration/README.md); activate the [agents](../../ai/agents/README.md) you need; hire your first critical roles. **Gate:** work can be routed, reviewed, and shipped.
 
 ### Step 7 — Define the product
@@ -208,7 +208,7 @@ every lesson to [memory](../../ai/memory/lessons-learned.md) so the company comp
 
 ## Part D — What kills companies (and the antidote)
 
-| Failure | Antidote in Company OS |
+| Failure | Antidote in AI-Native OS |
 |---|---|
 | Building something nobody wants | [Discovery](../departments/product/discovery.md) & demand validation **before** building |
 | Running out of cash | Weekly runway tracking; [unit economics](../departments/strategy/unit-economics.md) |
@@ -222,6 +222,6 @@ every lesson to [memory](../../ai/memory/lessons-learned.md) so the company comp
 
 ---
 
-**Where to go next:** the [Company OS hub](../../README.md) · the [SDLC](../workflows/sdlc.md) ·
+**Where to go next:** the [AI-Native OS hub](../../README.md) · the [SDLC](../workflows/sdlc.md) ·
 the [startup lifecycle](../departments/strategy/startup-lifecycle.md). This guide is the trailhead; the departments
 do the work.

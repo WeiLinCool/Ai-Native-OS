@@ -1,7 +1,7 @@
 # Starter Kit: AI Startup
 
 A company whose core product is an AI system (LLM app, agent product, ML service). This kit inherits
-all of Company OS and adds what an AI-native product company specifically needs.
+the AI-Native OS core and adds what an AI-native product company specifically needs.
 
 ## What it inherits (unchanged)
 
@@ -20,7 +20,7 @@ all of Company OS and adds what an AI-native product company specifically needs.
 
 ## Why these deltas
 
-An AI startup lives or dies on **evaluation, cost, and model reliability**. Core Company OS already
+An AI startup lives or dies on **evaluation, cost, and model reliability**. The AI-Native OS core already
 treats [AI as an engineering discipline](../../handbook/departments/ai-engineering/README.md); this kit makes evaluation gates,
 prompt/model versioning, drift monitoring, and per-request cost first-class in the day-to-day workflow.
 

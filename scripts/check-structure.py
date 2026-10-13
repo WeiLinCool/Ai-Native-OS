@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify Company OS structural conventions.
+"""Verify AI-Native OS structural conventions.
 
 Checks that every full department has the standard 18 files + 3 subfolders, and that every agent spec
 has the 11 required sections. Runs in CI (.github/workflows/docs-check.yml). Exits non-zero on any gap.

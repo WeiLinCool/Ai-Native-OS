@@ -1,13 +1,13 @@
 # Orchestration — The Kernel
 
-Orchestration is how Company OS turns a request into coordinated, reviewed, approved, and executed
+Orchestration is how AI-Native OS turns a request into coordinated, reviewed, approved, and executed
 work across a workforce of specialized [agents](../agents/README.md). No agent works alone on major
 decisions; the kernel is what makes many narrow experts behave like one reliable organization.
 
 > **This kernel is executable.** The pages below specify the behaviour; [runtime.md](runtime.md)
 > points at the code that performs it — selecting agents for a request, spawning temporary instances
 > of them, running independent work in parallel, reviewing it, and synthesizing the result.
-> Run it with `python -m companyos run "<your request>"`.
+> Run it with `python -m ai_native_os run "<your request>"`.
 
 ---
 

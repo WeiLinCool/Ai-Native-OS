@@ -1,12 +1,12 @@
 # Department Template
 
 > Copy this entire folder to `<department>/` and fill in every file. This is the canonical shape for
-> every department in Company OS — see [STRUCTURE.md](../../../STRUCTURE.md#standard-department-structure).
+> every department in AI-Native OS — see [STRUCTURE.md](../../../STRUCTURE.md#standard-department-structure).
 > Delete these blockquote instructions as you complete each file. **Never leave placeholder text.**
 
 # <Department> — Overview
 
-One paragraph: what this department is accountable for and how it fits into Company OS.
+One paragraph: what this department is accountable for and how it fits into AI-Native OS.
 
 ## Index
 

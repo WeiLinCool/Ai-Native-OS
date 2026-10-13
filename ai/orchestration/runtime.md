@@ -5,7 +5,7 @@ points at the code that does it: [`runtime/`](../../runtime/README.md), a depend
 package that reads the [agent specs](../agents/README.md) and actually executes them.
 
 ```bash
-python -m companyos run "Design and implement authentication for a web application."
+python -m ai_native_os run "Design and implement authentication for a web application."
 ```
 
 ## Definition vs. Instance

@@ -1,10 +1,10 @@
-# Company OS
+# Ai-Native-OS
 
 > **The open-source operating system for AI-native technology companies.**
 >
-> Version: 3.0 · Clone it, customize it, and run a company from idea to global scale.
+> Version: 3.1 · Clone it, customize it, and run a company from idea to global scale.
 
-Company OS is not a prompt repository, a code template, or a business plan. It is the **central
+AI-Native OS is not a prompt repository, a code template, or a business plan. It is the **central
 source of truth** for how an AI-native company operates: organizational structure, engineering
 culture, product development, research, operations, an AI-agent workforce, orchestration, memory,
 standards, templates, playbooks, and domain-specific starter kits.
@@ -41,7 +41,7 @@ runs independent work in parallel, reviews it, and synthesizes the result. No de
 API key required to try it:
 
 ```bash
-python -m companyos run "Design and implement authentication for a web application."
+python -m ai_native_os run "Design and implement authentication for a web application."
 ```
 
 ```
@@ -66,7 +66,7 @@ terminates them when the work is done; there are never 107 agents running. See
 
 ## How to customize
 
-Company OS ships complete. Making it *yours* is mostly **deleting what you don't need** and **filling in
+AI-Native OS ships complete. Making it *yours* is mostly **deleting what you don't need** and **filling in
 who you are**. Do it in this order:
 
 **1. Make it your company** *(~30 min)* — edit these five files. They are the only place your identity is
@@ -118,7 +118,7 @@ link that still references it.
 ## Folder structure
 
 ```
-company-os/
+ai-native-os/
 │
 ├── handbook/                  ◀── EVERYTHING YOU READ ─────────────────────────
 │   ├── company/                   identity: mission, vision, principles, structure, roles
@@ -151,7 +151,7 @@ company-os/
 │   └── memory/                    14 memory types + retrieval, retention, versioning
 │
 ├── runtime/                   ◀── THE KERNEL, EXECUTABLE ──────────────────────
-│   ├── companyos/                 registry · planner · decomposer · selector · spawner
+│   ├── ai_native_os/              registry · planner · decomposer · selector · spawner
 │   │                              scheduler · reviewer · synthesizer · agent map
 │   │                              providers (anthropic · openai · local · mock) · tools · memory
 │   └── tests/                     220 tests, stdlib only, no API keys needed
@@ -281,7 +281,7 @@ The end-to-end path a company travels, with the exact doc for each phase. The [C
 
 ## Starter kits
 
-Preconfigured company types that inherit core Company OS and add domain deltas — see [starter-kits/](starter-kits/README.md).
+Preconfigured company types that inherit the AI-Native OS core and add domain deltas — see [starter-kits/](starter-kits/README.md).
 
 [ai-startup](starter-kits/ai-startup/) · [saas](starter-kits/saas/) · [developer-tools](starter-kits/developer-tools/) · [enterprise-b2b](starter-kits/enterprise-b2b/) · [marketplace](starter-kits/marketplace/) · [consumer-app](starter-kits/consumer-app/) · [robotics](starter-kits/robotics/) · [drone](starter-kits/drone/) · [embedded](starter-kits/embedded/) · [iot](starter-kits/iot/) · [research-lab](starter-kits/research-lab/) · [fintech](starter-kits/fintech/) · [healthtech](starter-kits/healthtech/) · [climate-tech](starter-kits/climate-tech/) · [gaming](starter-kits/gaming/) · [edtech](starter-kits/edtech/)
 
@@ -323,4 +323,12 @@ and fill it in. To add an agent, copy [ai/agents/agent-template.md](ai/agents/ag
 
 ## License
 
-Company OS is released under the [MIT License](LICENSE) — free to clone, customize, and use commercially.
+AI-Native OS is released under the [MIT License](LICENSE) — free to clone, customize, and use commercially.
+
+---
+
+## Credits
+
+AI-Native OS is a fork of **[rojenwai/CompanyOS](https://github.com/rojenwai/CompanyOS)** (MIT),
+restructured into the two-sided handbook/ + ai/ layout with an executable runtime. The upstream
+copyright notice is retained in [LICENSE](LICENSE).

@@ -4,10 +4,10 @@ from __future__ import annotations
 
 import unittest
 
-from companyos.errors import ToolPermissionError
-from companyos.memory import FileMemoryStore
-from companyos.tools import ToolContext, ToolRegistry
-from companyos.tools.policy import resolve_policy
+from ai_native_os.errors import ToolPermissionError
+from ai_native_os.memory import FileMemoryStore
+from ai_native_os.tools import ToolContext, ToolRegistry
+from ai_native_os.tools.policy import resolve_policy
 
 from . import support
 

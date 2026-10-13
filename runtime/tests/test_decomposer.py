@@ -5,9 +5,9 @@ from __future__ import annotations
 import json
 import unittest
 
-from companyos import purposes
-from companyos.orchestration.decomposer import TaskDecomposer
-from companyos.orchestration.planner import Planner
+from ai_native_os import purposes
+from ai_native_os.orchestration.decomposer import TaskDecomposer
+from ai_native_os.orchestration.planner import Planner
 
 from . import support
 

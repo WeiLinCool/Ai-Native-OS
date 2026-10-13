@@ -7,10 +7,10 @@ import json
 import time
 import unittest
 
-from companyos import purposes
-from companyos.observability import EventType
-from companyos.orchestration import Orchestrator
-from companyos.status import RunStatus, TaskStatus, Verdict
+from ai_native_os import purposes
+from ai_native_os.observability import EventType
+from ai_native_os.orchestration import Orchestrator
+from ai_native_os.status import RunStatus, TaskStatus, Verdict
 
 from . import support
 

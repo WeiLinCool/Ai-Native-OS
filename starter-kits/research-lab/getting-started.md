@@ -7,4 +7,4 @@
 5. Decide publish vs. protect vs. productize per result.
 6. Hand productizable findings to [product](../../handbook/departments/product/README.md) via the [opportunity score](../../handbook/departments/research/opportunity-scoring.md).
 
-> Everything not listed here comes from core Company OS - this kit only adds the domain-specific deltas.
+> Everything not listed here comes from the AI-Native OS core - this kit only adds the domain-specific deltas.

@@ -1,6 +1,6 @@
 # Starter Kits
 
-A starter kit is a **preconfigured company type** that inherits the core Company OS and adds
+A starter kit is a **preconfigured company type** that inherits the AI-Native OS core and adds
 domain-specific practice. Clone the repo, pick a starter kit, and you have an operating system tuned to
 your kind of company.
 
@@ -32,7 +32,7 @@ your kind of company.
 | [gaming/](gaming/) | Games as a live product (fun, retention, live-ops) |
 | [edtech/](edtech/) | Learning products (efficacy, accessibility, student data) |
 
-Each kit inherits all of core Company OS and adds only its domain deltas (agents, standards, workflows,
+Each kit inherits all of the AI-Native OS core and adds only its domain deltas (agents, standards, workflows,
 getting-started). **Delete the kits you don't use** — see [CUSTOMIZE.md](../CUSTOMIZE.md).
 
 ## To add a starter kit

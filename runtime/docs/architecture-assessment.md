@@ -1,6 +1,6 @@
 # Architecture assessment
 
-Written before the runtime was implemented, recording what CompanyOS was at that point and why the
+Written before the runtime was implemented, recording what AI-Native OS was at that point and why the
 runtime is shaped the way it is. Kept as the rationale behind the design, not as current-state docs —
 for those, see [the runtime README](../README.md).
 
@@ -39,7 +39,7 @@ capability taxonomy viable instead of per-agent configuration.
 **3. The spec vocabulary was reused rather than replaced.** `execution-lifecycle.md` already defines
 `QUEUED → ASSIGNED → IN_PROGRESS → IN_REVIEW → AWAITING_APPROVAL → EXECUTING → DONE`. `TaskStatus` is
 that lifecycle plus the states a real scheduler needs (`SKIPPED`, `CANCELLED`, `RETRYING`), and
-[`spec_state()`](../companyos/status.py) maps back onto the documented names so dashboards and the
+[`spec_state()`](../ai_native_os/status.py) maps back onto the documented names so dashboards and the
 handbook stay consistent. Reviewer verdicts, the Security Reviewer's non-overridable block, and the
 "return to author with findings, never blind-retry" rule are likewise enforced in code because the
 specs already state them.

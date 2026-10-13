@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import unittest
 
-from companyos.errors import CyclicDependencyError, MalformedTaskError
-from companyos.models import Task, TaskGraph
-from companyos.status import TaskStatus, spec_state
+from ai_native_os.errors import CyclicDependencyError, MalformedTaskError
+from ai_native_os.models import Task, TaskGraph
+from ai_native_os.status import TaskStatus, spec_state
 
 from . import support
 
